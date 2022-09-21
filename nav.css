@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+	/* 전체 구간에 적용되는 flex */
+	.flex_1{flex: 1;}
+    .flex_2{flex: 2;}
+    .flex_3{flex: 3;}
+    .flex_4{flex: 4;}
+    .flex_5{flex: 5;}
+    .flex_6{flex: 6;}
+    .flex_7{flex: 7;}
+    .flex_8{flex: 8;}
+    .felx_9{flex: 9;}
+    .flex_10{flex: 10;}
+    .flex_11{flex: 11;}
+    .flex_12{flex: 12;}
+
+
+    /* 데스크탑 나브 바 */
+	#nav { 			
+		color: #13519c;
+			height: 16vh; 
+		position: fixed;
+    	top:0;
+    	width: 98vw;
+    	display: flex;
+    	justify-content: space-between;
+    	transition:all 0.3s ease;
+    	padding:1vh 0;
+    	font-weight: bold;}
+
+    #nav.hide {top: -16vh;}	   
+
+	.nav_title {font-size: calc(1rem + 3vw); white-space: nowrap;}
+	.nav_title:hover {font-size: 0;}
+    .nav_title span{display: none; font-size: calc(1rem + 3vw); line-height: 0.4; font-weight: 100; font-family: HV; color: #ef8b9e;}
+  	.nav_title:hover span{display: block;}
+  	
+  	.nav_menu {display: flex; margin-top: 3px; font-size: calc(0.5rem + 1vw); text-align: right;}
+  	.nav_menu span{font-weight: 100; font-family: HV; color: #ef8b9e;}
+  	.nav_menu a:hover{font-size: 0;}
+  	.nav_menu a span{display: none; font-size: calc(0.5rem + 1vw); text-align: right; font-family: HV; color: #ef8b9e;line-height: 0.8;}
+  	.nav_menu a:hover span{display: block;}
+
+
+  	/* 모바일 나브 바 */
+ 
+ @media all and (max-width: 767px){
+
+ 	#Nav{display: none;}
+
+
+ }
