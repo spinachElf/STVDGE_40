@@ -18,7 +18,7 @@
     /* 데스크탑 나브 바 */
 	#nav { 			
 		color: #13519c;
-			height: 16vh; 
+			height: 18vh; 
 		position: fixed;
     	top:0;
     	width: 98vw;
@@ -28,7 +28,7 @@
     	padding:1vh 0;
     	font-weight: bold;}
 
-    #nav.hide {top: -16vh;}	   
+    #nav.hide {top: -18vh;}	   
 
 	.nav_title {font-size: calc(1rem + 3vw); white-space: nowrap;}
 	.nav_title:hover {font-size: 0;}
