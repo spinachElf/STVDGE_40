@@ -1,0 +1,1536 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+  <base target="_blank">
+
+  <link rel="stylesheet" type="text/css" href="./common/mouse.css">
+  <link rel="stylesheet" type="text/css" href="./common/nav.css">
+  <link rel="stylesheet" type="text/css" href="./common/common.css">
+  <link rel="stylesheet" type="text/css" href="./common/footer.css">
+
+
+  <title>프로젝트 Project</title>
+
+   <style type="text/css">
+
+      body {overflow-x: hidden;}
+
+      .name {color:#ef8b9e;}
+      .undragable{-webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none;}
+  
+      #myBtnContainer {
+        min-height:6vh;
+        height:auto;
+        position: sticky;
+        margin-left:-1vw;
+        position: -webkit-sticky;
+        width:100vw;
+        padding: 0 1vw;
+        
+        background-color: #f2f6fb;
+        bottom:0;
+        border-top:solid #13519c 2px;
+        z-index:10;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+
+
+    input {display: none; 
+    }
+
+    .ProjectBox {column-count: 6; -webkit-column-count: 6;
+  -moz-column-count: 6; margin:0 auto; width: 100%; min-height: 100vh; 
+    }
+
+
+
+.courses {width: 16.4%; height:auto; margin-bottom: 7vh; margin-top: 0; margin-left:0.1vw; margin-right: 0.1vw;
+}
+.courses img{width:100%; height:auto;}
+.courses p {font-size: calc(0.5vw + 12px); font-weight: bold; color: #13519c; line-height: 160%; }
+
+label {display: flex;
+  border-bottom-width:solid #13519c 4px; 
+  padding:0; 
+  line-height: 140%; 
+  font-size: 1vmax;
+  font-weight:bold; 
+  max-width:15vw;
+  min-width:8vw;
+  color:#13519c; 
+  margin:0 0.1vw; 
+  cursor: pointer 
+  background-color:#f2f6fb;  border-collapse:collapse;}
+label svg {width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
+.st2{fill:none;stroke:#76c3de;stroke-width:2;stroke-miterlimit:10;}
+  
+.st21{fill:#f2f6fb;}
+label {color:#76c3de; flex:1; cursor: pointer;}
+
+input:checked ~ label {color:#13519c;}
+input:checked ~ label .st21 {fill:#308FC8;}
+input:checked ~ label .st2 {stroke:#13519c;}
+
+/*중간중간 나오는 꽃*/
+.flower img {width:50%; margin: auto;}
+
+
+
+</style>
+</head>
+
+
+<body>
+  <div id="customCursor1" class="cursor">
+
+      <svg id="cursor1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor2" class="cursor">
+
+      <svg id="cursor2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor3" class="cursor">
+
+      <svg id="cursor3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+    <div id="customCursor4" class="cursor">
+
+      <svg id="cursor4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor5" class="cursor">
+
+      <svg id="cursor5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor6" class="cursor">
+
+      <svg id="cursor6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+   <nav id="nav"> 
+      <a href="main.html" class="nav_title flex_8">서울과학기술대학교 시각디자인전공<br>40th 졸업전시<span style="line-height: 70px;">Celeblossom</span></a></div>
+      <div class="flex_1"></div>
+      <div class="nav_menu flex_3">
+        <a href="project.html" class="flex_1">프로젝트<span>Project</span></a>
+        <a href="profile.html" class="flex_1">프로필<span>Profile</span></a>
+        <a href="guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+        </div>
+  </nav>
+  <nav id="m_nav">
+    
+  </nav>
+   
+
+       
+        
+
+
+       <div id="ProjectBox"class="ProjectBox flex">
+
+          <!-- 일러 23명 -->
+          <div class="courses illustrations">
+              <a href="./illustration/16100901/detail.html">
+              <img src="./thumbnail/illustration/16100901.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김도영</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/19100841/detail.html">
+              <img src="./thumbnail/illustration/19100841.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김아람</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18100833/detail.html">
+              <img src="./thumbnail/illustration/18100833.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김주영</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18100840/detail.html">
+              <img src="./thumbnail/illustration/18100840.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김현조</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/17100841/detail.html">
+              <img src="./thumbnail/illustration/17100841.jpg">
+              <p>제목을 입력하세요.<span class="name"> —노희정</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18100849/detail.html">
+              <img src="./thumbnail/illustration/18100849.jpg">
+              <p>제목을 입력하세요.<span class="name"> —마선형</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/16100933/detail.html">
+              <img src="./thumbnail/illustration/16100933.jpg">
+              <p>제목을 입력하세요.<span class="name"> —박금강</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/17100855/detail.html">
+              <img src="./thumbnail/illustration/17100855.jpg">
+              <p>제목을 입력하세요.<span class="name"> —배세련</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/17100856/detail.html">
+              <img src="./thumbnail/illustration/17100856.jpg">
+              <p>제목을 입력하세요.<span class="name"> —백미나</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/17100860/detail.html">
+              <img src="./thumbnail/illustration/17100860.jpg">
+              <p>제목을 입력하세요.<span class="name"> —송도은</span></p>
+              </a>
+          </div>
+
+          <div class="courses illustrations flower">
+            <img src="./common/Illustration_flower.svg">
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18100868/detail.html">
+              <img src="./thumbnail/illustration/18100868.jpg">
+              <p>제목을 입력하세요.<span class="name"> —안수오</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18100983/detail.html">
+              <img src="./thumbnail/illustration/18100983.jpg">
+              <p>제목을 입력하세요.<span class="name"> —원준아</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/17100871/detail.html">
+              <img src="./thumbnail/illustration/17100871.jpg">
+              <p>제목을 입력하세요.<span class="name"> —유혜원</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18100881/detail.html">
+              <img src="./thumbnail/illustration/18100881.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이규리</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/15116336/detail.html">
+              <img src="./thumbnail/illustration/15116336.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이병수</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/16100969/detail.html">
+              <img src="./thumbnail/illustration/16100969.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이예빛</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/17100887/detail.html">
+              <img src="./thumbnail/illustration/17100887.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이진희</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18101029/detail.html">
+              <img src="./thumbnail/illustration/18101029.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이희주</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18100894/detail.html">
+              <img src="./thumbnail/illustration/18100894.jpg">
+              <p>제목을 입력하세요.<span class="name"> —임주연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/17100890/detail.html">
+              <img src="./thumbnail/illustration/17100890.jpg">
+              <p>제목을 입력하세요.<span class="name"> —장윤하</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations flower">
+            <img src="./common/Illustration_flower.svg">
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18100899/detail.html">
+              <img src="./thumbnail/illustration/18100899.jpg">
+              <p>제목을 입력하세요.<span class="name"> —전예진</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/15185390/detail.html">
+              <img src="./thumbnail/illustration/15185390.jpg">
+              <p>제목을 입력하세요.<span class="name"> —정다현</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses illustrations">
+              <a href="./illustration/18100901/detail.html">
+              <img src="./thumbnail/illustration/18100901.jpg">
+              <p>제목을 입력하세요.<span class="name"> —정려립</span></p>
+              </a>
+          </div>
+
+
+          <!-- 편집 -->
+          <div class="courses editorial">
+              <a href="./editorial/16100901/detail.html">
+              <img src="./thumbnail/editorial/16100901.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김도영</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/18100823/detail.html">
+              <img src="./thumbnail/editorial/18100823.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김민지</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/19100841/detail.html">
+              <img src="./thumbnail/editorial/19100841.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김아람</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/18100836/detail.html">
+              <img src="./thumbnail/editorial/18100836.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김지연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/18100840/detail.html">
+              <img src="./thumbnail/editorial/18100840.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김현조</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/17100841/detail.html">
+              <img src="./thumbnail/editorial/17100841.jpg">
+              <p>제목을 입력하세요.<span class="name"> —노희정</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/18100870/detail.html">
+              <img src="./thumbnail/editorial/18100870.jpg">
+              <p>제목을 입력하세요.<span class="name"> —안예슬</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/19100877/detail.html">
+              <img src="./thumbnail/editorial/19100877.jpg">
+              <p>제목을 입력하세요.<span class="name"> —유승자야</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/19100878/detail.html">
+              <img src="./thumbnail/editorial/19100878.jpg">
+              <p>제목을 입력하세요.<span class="name"> —유현영</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/17100977/detail.html">
+              <img src="./thumbnail/editorial/17100977.jpg">
+              <p>제목을 입력하세요.<span class="name"> —윤예원</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/19102425/detail.html">
+              <img src="./thumbnail/editorial/19102425.jpg">
+              <p>제목을 입력하세요.<span class="name"> —으엉 티엣탄</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial flower">
+            <img src="./common/Editorial_flower.svg">
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/18100989/detail.html">
+              <img src="./thumbnail/editorial/18100989.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이유나</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/19100892/detail.html">
+              <img src="./thumbnail/editorial/19100892.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이지현</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/17100988/detail.html">
+              <img src="./thumbnail/editorial/17100988.jpg">
+              <p>제목을 입력하세요.<span class="name"> —임비아</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses editorial">
+              <a href="./editorial/18100901/detail.html">
+              <img src="./thumbnail/editorial/18100901.jpg">
+              <p>제목을 입력하세요.<span class="name"> —정려립</span></p>
+              </a>
+          </div>
+
+
+
+          <!-- 광고·서비스 -->
+          <div class="courses commercial">
+              <a href="./commercial/17100815/detail.html">
+              <img src="./thumbnail/commercial/17100815.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김가은</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/18100818/detail.html">
+              <img src="./thumbnail/commercial/18100818.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김다은</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/18100820/detail.html">
+              <img src="./thumbnail/commercial/18100820.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김도연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/18100822/detail.html">
+              <img src="./thumbnail/commercial/18100822.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김민주</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/18100846/detail.html">
+              <img src="./thumbnail/commercial/18100846.jpg">
+              <p>제목을 입력하세요.<span class="name"> —나윤경</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/18100853/detail.html">
+              <img src="./thumbnail/commercial/18100853.jpg">
+              <p>제목을 입력하세요.<span class="name"> —박세림</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/20110091/detail.html">
+              <img src="./thumbnail/commercial/20110091.jpg">
+              <p>제목을 입력하세요.<span class="name"> —박소희</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/18100855/detail.html">
+              <img src="./thumbnail/commercial/18100855.jpg">
+              <p>제목을 입력하세요.<span class="name"> —박시원</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/17100855/detail.html">
+              <img src="./thumbnail/commercial/17100855.jpg">
+              <p>제목을 입력하세요.<span class="name"> —배세련</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/18110001/detail.html">
+              <img src="./thumbnail/commercial/18110001.jpg">
+              <p>제목을 입력하세요.<span class="name"> —오재란</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial flower">
+            <img src="./common/Commercial_flower.svg">
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/16100969/detail.html">
+              <img src="./thumbnail/commercial/16100969.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이예빛</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/18100900/detail.html">
+              <img src="./thumbnail/commercial/18100900.jpg">
+              <p>제목을 입력하세요.<span class="name"> —정그린</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses commercial">
+              <a href="./commercial/18100911/detail.html">
+              <img src="./thumbnail/commercial/18100911.jpg">
+              <p>제목을 입력하세요.<span class="name"> —최현서</span></p>
+              </a>
+          </div>
+
+
+
+          <!-- 아이덴티티 -->
+          <div class="courses identity">
+              <a href="./identity/17100815/detail.html">
+              <img src="./thumbnail/identity/17100815.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김가은</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100820/detail.html">
+              <img src="./thumbnail/identity/18100820.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김도연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100823/detail.html">
+              <img src="./thumbnail/identity/18100823.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김민지</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100825/detail.html">
+              <img src="./thumbnail/identity/18100825.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김세림</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100836/detail.html">
+              <img src="./thumbnail/identity/18100836.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김지연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100838/detail.html">
+              <img src="./thumbnail/identity/18100838.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김태연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/19100851/detail.html">
+              <img src="./thumbnail/identity/19100851.jpg">
+              <p>제목을 입력하세요.<span class="name"> —남승주</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/17100842/detail.html">
+              <img src="./thumbnail/identity/17100842.jpg">
+              <p>제목을 입력하세요.<span class="name"> —도수미</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/16100930/detail.html">
+              <img src="./thumbnail/identity/16100930.jpg">
+              <p>제목을 입력하세요.<span class="name"> —문성웅</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100853/detail.html">
+              <img src="./thumbnail/identity/18100853.jpg">
+              <p>제목을 입력하세요.<span class="name"> —박세림</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity flower">
+            <img src="./common/Identity_flower.svg">
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/20110091/detail.html">
+              <img src="./thumbnail/identity/20110091.jpg">
+              <p>제목을 입력하세요.<span class="name"> —박소희</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/17100862/detail.html">
+              <img src="./thumbnail/identity/17100862.jpg">
+              <p>제목을 입력하세요.<span class="name"> —송채현</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100866/detail.html">
+              <img src="./thumbnail/identity/18100866.jpg">
+              <p>제목을 입력하세요.<span class="name"> —신화연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100870/detail.html">
+              <img src="./thumbnail/identity/18100870.jpg">
+              <p>제목을 입력하세요.<span class="name"> —안예슬</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/19102424/detail.html">
+              <img src="./thumbnail/identity/19102424.jpg">
+              <p>제목을 입력하세요.<span class="name"> —알렉산드라</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18110001/detail.html">
+              <img src="./thumbnail/identity/18110001.jpg">
+              <p>제목을 입력하세요.<span class="name"> —오재란</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/19100877/detail.html">
+              <img src="./thumbnail/identity/19100877.jpg">
+              <p>제목을 입력하세요.<span class="name"> —유승자야</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/15185363/detail.html">
+              <img src="./thumbnail/identity/15185363.jpg">
+              <p>제목을 입력하세요.<span class="name"> —유지원</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/19102425/detail.html">
+              <img src="./thumbnail/identity/19102425.jpg">
+              <p>제목을 입력하세요.<span class="name"> —으엉 티엣탄</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100882/detail.html">
+              <img src="./thumbnail/identity/18100882.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이미주</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity flower">
+            <img src="./common/Identity_flower.svg">
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/19100892/detail.html">
+              <img src="./thumbnail/identity/19100892.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이지현</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/17100988/detail.html">
+              <img src="./thumbnail/identity/17100988.jpg">
+              <p>제목을 입력하세요.<span class="name"> —임비아</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/19100905/detail.html">
+              <img src="./thumbnail/identity/19100905.jpg">
+              <p>제목을 입력하세요.<span class="name"> —장서현</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100900/detail.html">
+              <img src="./thumbnail/identity/18100900.jpg">
+              <p>제목을 입력하세요.<span class="name"> —정그린</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100911/detail.html">
+              <img src="./thumbnail/identity/18100911.jpg">
+              <p>제목을 입력하세요.<span class="name"> —최현서</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses identity">
+              <a href="./identity/18100914/detail.html">
+              <img src="./thumbnail/identity/18100914.jpg">
+              <p>제목을 입력하세요.<span class="name"> —한다민</span></p>
+              </a>
+          </div>
+
+
+          <!-- 영상 -->
+          <div class="courses video">
+              <a href="./video/18100815/detail.html">
+              <img src="./thumbnail/video/18100815.jpg">
+              <p>제목을 입력하세요.<span class="name"> —고윤오</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100825/detail.html">
+              <img src="./thumbnail/video/18100825.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김세림</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100833/detail.html">
+              <img src="./thumbnail/video/18100833.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김주영</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100838/detail.html">
+              <img src="./thumbnail/video/18100838.jpg">
+              <p>제목을 입력하세요.<span class="name"> —김태연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/19100851/detail.html">
+              <img src="./thumbnail/video/19100851.jpg">
+              <p>제목을 입력하세요.<span class="name"> —남승주</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/17100842/detail.html">
+              <img src="./thumbnail/video/17100842.jpg">
+              <p>제목을 입력하세요.<span class="name"> —도수미</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100849/detail.html">
+              <img src="./thumbnail/video/18100849.jpg">
+              <p>제목을 입력하세요.<span class="name"> —마선형</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/16100930/detail.html">
+              <img src="./thumbnail/video/16100930.jpg">
+              <p>제목을 입력하세요.<span class="name"> —문성웅</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/16100933/detail.html">
+              <img src="./thumbnail/video/16100933.jpg">
+              <p>제목을 입력하세요.<span class="name"> —박금강</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100858/detail.html">
+              <img src="./thumbnail/video/18100858.jpg">
+              <p>제목을 입력하세요.<span class="name"> —배가원</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video flower">
+            <img src="./common/Video_flower.svg">
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/17100856/detail.html">
+              <img src="./thumbnail/video/17100856.jpg">
+              <p>제목을 입력하세요.<span class="name"> —백미나</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/17100860/detail.html">
+              <img src="./thumbnail/video/17100860.jpg">
+              <p>제목을 입력하세요.<span class="name"> —송도은</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/17100862/detail.html">
+              <img src="./thumbnail/video/17100862.jpg">
+              <p>제목을 입력하세요.<span class="name"> —송채현</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100866/detail.html">
+              <img src="./thumbnail/video/18100866.jpg">
+              <p>제목을 입력하세요.<span class="name"> —신화연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100868/detail.html">
+              <img src="./thumbnail/video/18100868.jpg">
+              <p>제목을 입력하세요.<span class="name"> —안수오</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/19102424/detail.html">
+              <img src="./thumbnail/video/19102424.jpg">
+              <p>제목을 입력하세요.<span class="name"> —알렉산드라</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100874/detail.html">
+              <img src="./thumbnail/video/18100874.jpg">
+              <p>제목을 입력하세요.<span class="name"> —양희수</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100983/detail.html">
+              <img src="./thumbnail/video/18100983.jpg">
+              <p>제목을 입력하세요.<span class="name"> —원준아</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/15185363/detail.html">
+              <img src="./thumbnail/video/15185363.jpg">
+              <p>제목을 입력하세요.<span class="name"> —유지원</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/17100871/detail.html">
+              <img src="./thumbnail/video/17100871.jpg">
+              <p>제목을 입력하세요.<span class="name"> —유혜원</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video flower">
+            <img src="./common/Video_flower.svg">
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100881/detail.html">
+              <img src="./thumbnail/video/18100881.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이규리</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100882/detail.html">
+              <img src="./thumbnail/video/18100882.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이미주</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/15116336/detail.html">
+              <img src="./thumbnail/video/15116336.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이병수</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/17100887/detail.html">
+              <img src="./thumbnail/video/17100887.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이진희</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18101029/detail.html">
+              <img src="./thumbnail/video/18101029.jpg">
+              <p>제목을 입력하세요.<span class="name"> —이희주</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100894/detail.html">
+              <img src="./thumbnail/video/18100894.jpg">
+              <p>제목을 입력하세요.<span class="name"> —임주연</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18101030/detail.html">
+              <img src="./thumbnail/video/18101030.jpg">
+              <p>제목을 입력하세요.<span class="name"> —임효선</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/19100905/detail.html">
+              <img src="./thumbnail/video/19100905.jpg">
+              <p>제목을 입력하세요.<span class="name"> —장서현</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/17100890/detail.html">
+              <img src="./thumbnail/video/17100890.jpg">
+              <p>제목을 입력하세요.<span class="name"> —장윤하</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100899/detail.html">
+              <img src="./thumbnail/video/18100899.jpg">
+              <p>제목을 입력하세요.<span class="name"> —전예진</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video flower">
+            <img src="./common/Video_flower.svg">
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/15185390/detail.html">
+              <img src="./thumbnail/video/15185390.jpg">
+              <p>제목을 입력하세요.<span class="name"> —정다현</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100905/detail.html">
+              <img src="./thumbnail/video/18100905.jpg">
+              <p>제목을 입력하세요.<span class="name"> —정혜림</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100910/detail.html">
+              <img src="./thumbnail/video/18100910.jpg">
+              <p>제목을 입력하세요.<span class="name"> —최한솔</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100914/detail.html">
+              <img src="./thumbnail/video/18100914.jpg">
+              <p>제목을 입력하세요.<span class="name"> —한다민</span></p>
+              </a>
+          </div>
+
+
+          <div class="courses video">
+              <a href="./video/18100917/detail.html">
+              <img src="./thumbnail/video/18100917.jpg">
+              <p>제목을 입력하세요.<span class="name"> —홍미현</span></p>
+              </a>
+          </div>
+
+
+          <!-- UX -->
+          <div class="courses ux">
+            <a href="./ux/18100815/detail.html">
+            <img src="./thumbnail/ux/18100815.jpg">
+            <p>제목을 입력하세요.<span class="name"> —고윤오</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100818/detail.html">
+            <img src="./thumbnail/ux/18100818.jpg">
+            <p>제목을 입력하세요.<span class="name"> —김다은</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100822/detail.html">
+            <img src="./thumbnail/ux/18100822.jpg">
+            <p>제목을 입력하세요.<span class="name"> —김민주</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100846/detail.html">
+            <img src="./thumbnail/ux/18100846.jpg">
+            <p>제목을 입력하세요.<span class="name"> —나윤경</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100855/detail.html">
+            <img src="./thumbnail/ux/18100855.jpg">
+            <p>제목을 입력하세요.<span class="name"> —박시원</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100858/detail.html">
+            <img src="./thumbnail/ux/18100858.jpg">
+            <p>제목을 입력하세요.<span class="name"> —배가원</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100874/detail.html">
+            <img src="./thumbnail/ux/18100874.jpg">
+            <p>제목을 입력하세요.<span class="name"> —양희수</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/19100878/detail.html">
+            <img src="./thumbnail/ux/19100878.jpg">
+            <p>제목을 입력하세요.<span class="name"> —유현영</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/17100977/detail.html">
+            <img src="./thumbnail/ux/17100977.jpg">
+            <p>제목을 입력하세요.<span class="name"> —윤예원</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100989/detail.html">
+            <img src="./thumbnail/ux/18100989.jpg">
+            <p>제목을 입력하세요.<span class="name"> —이유나</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux flower">
+            <img src="./common/Ux_flower.svg">
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18101030/detail.html">
+            <img src="./thumbnail/ux/18101030.jpg">
+            <p>제목을 입력하세요.<span class="name"> —임효선</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100905/detail.html">
+            <img src="./thumbnail/ux/18100905.jpg">
+            <p>제목을 입력하세요.<span class="name"> —정혜림</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100910/detail.html">
+            <img src="./thumbnail/ux/18100910.jpg">
+            <p>제목을 입력하세요.<span class="name"> —최한솔</span></p>
+            </a>
+          </div>
+
+
+          <div class="courses ux">
+            <a href="./ux/18100917/detail.html">
+            <img src="./thumbnail/ux/18100917.jpg">
+            <p>제목을 입력하세요.<span class="name"> —홍미현</span></p>
+            </a>
+          </div>
+
+          
+
+          
+         </div>
+         <div id="myBtnContainer" class=" flex">
+
+          <div>
+            <input type="checkbox" name="course" value="all" id="all" onclick="AllCheck()" checked>
+            <label for = "all" >
+              <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 84.6 84.6" style="enable-background:new 0 0 84.6 84.6;" xml:space="preserve">
+
+                <g>
+                  <path class="st21" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                  <path class="st2" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                </g>
+              </svg>
+            <div>
+              <p>모든 작품</p>
+              <p>All Projects</p>
+            </div>
+            </label>
+          </div>
+
+
+          <div>
+            <input type="checkbox" name="course" value="illustrations" id="illustrations" onclick="IlluCheck()">
+            <label for = "illustrations">
+              <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 84.6 84.6" style="enable-background:new 0 0 84.6 84.6;" xml:space="preserve">
+
+                <g>
+                  <path class="st21" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                  <path class="st2" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                </g>
+              </svg>
+            <div>
+              <p>일러스트레이션</p>
+              <p>Illustration</p>
+            </div>
+            </label>
+          </div>
+
+
+          <div>
+            <input type="checkbox" name="course" value="editorial" id="editorial" onclick="EdiCheck()">
+            <label for = "editorial">
+              <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 84.6 84.6" style="enable-background:new 0 0 84.6 84.6;" xml:space="preserve">
+
+                <g>
+                  <path class="st21" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                  <path class="st2" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                </g>
+              </svg>
+            <div>
+              <p>편집디자인</p>
+              <p>Editorial Design</p>
+            </div>
+            </label>
+          </div>
+
+
+          <div>
+            <input type="checkbox" name="course" value="commercial" id="commercial"onclick="CommercialCheck()" >
+            <label for = "commercial">
+              <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 84.6 84.6" style="enable-background:new 0 0 84.6 84.6;" xml:space="preserve">
+
+                <g>
+                  <path class="st21" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                  <path class="st2" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                </g>
+              </svg>
+            <div>
+              <p>광고·서비스 디자인</p>
+              <p>AD·Service Design</p>
+            </div>
+            </label>
+          </div>
+
+
+          <div>
+            <input type="checkbox" name="course" value="identity" id="identity" onclick="IdenCheck()">
+            <label for = "identity">
+              <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 84.6 84.6" style="enable-background:new 0 0 84.6 84.6;" xml:space="preserve">
+
+                <g>
+                  <path class="st21" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                  <path class="st2" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                </g>
+              </svg>
+            <div>
+              <p>아이덴티티디자인</p>
+              <p>Identity Design</p>
+            </div>
+            </label>
+          </div>
+
+
+          <div>
+            <input type="checkbox" name="course" value="video" id="video" onclick="MotionCheck()">
+            <label for = "video">
+              <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 84.6 84.6" style="enable-background:new 0 0 84.6 84.6;" xml:space="preserve">
+
+                <g>
+                  <path class="st21" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                  <path class="st2" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                </g>
+              </svg>
+            <div>
+              <p>영상디자인</p>
+              <p>Video Design</p>
+            </div>
+          </label>
+          </div>
+          
+          <div>
+            <input type="checkbox" name="course" value="ux" id="ux" onclick="UxCheck()">
+            <label for = "ux">
+              <svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 84.6 84.6" style="enable-background:new 0 0 84.6 84.6;" xml:space="preserve">
+
+                <g>
+                  <path class="st21" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                  <path class="st2" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                </g>
+              </svg>
+            <div>
+              <p>UX 디자인</p>
+              <p>UX Design</p>
+            </div>
+            </label>
+          </div>
+          
+          
+        </div>
+<!-- 푸터 -->
+<footer>
+  <img src="./common/footer_Left.svg" style="width:50%; position: absolute; left:0; bottom: 0;z-index: -1;" >
+  <img src="./common/footer_Right.svg" style="width:50%; position: absolute; right:-2vw; bottom: 0;z-index: -1;">
+  <div id="topBtn" class="topBtn undragable" onclick="topFunction()" style="z-index: 3;">
+    <img src="./common/ToTop.svg" class="footerIcon">
+    <p>맨 위로 To top</p>
+  </div>
+  <div>
+    <p class="footerKr">서울과학기술대학교 시각디자인학과 제40회 졸업전시</p>
+    <p class="footerEn">2022©Seoul National University of Science and Technology</p>
+  </div>
+  <div class="flex">
+    
+      <a  class="link" href="https://vd.seoultech.ac.kr/" >
+        <img src="./common/seoultech.svg" class="seoultechIcon">
+        
+      </a>
+    
+      <a  class="link" href="https://www.instagram.com/snad_vd/">
+        <img src="./common/instagram.svg" class="instaIcon">
+        
+      </a>
+    
+  </div>
+     
+</footer>
+   
+      
+   
+
+
+
+
+<script type="text/javascript">
+
+
+window.onload = AllCheck();
+
+function AllCheck(){
+var AllCheckBox = document.getElementById("all"); /*모든 작품*/
+  var all = document.getElementsByClassName("courses");
+  var MotionCheckBox = document.getElementById("video"); /*영상디자인 체크박스*/
+  var motion = document.getElementsByClassName("video");
+  var IlluCheckBox = document.getElementById("illustrations"); /*일러스트레이션 체크박스*/
+  var illust = document.getElementsByClassName("illustrations");
+  var CommerCheckBox = document.getElementById("commercial"); /*광고디자인 체크박스*/
+  var commercial = document.getElementsByClassName("commercial");
+  var UxuiCheckBox = document.getElementById("ux"); /*uxui 체크박스*/
+  var ux = document.getElementsByClassName("ux");
+  var IdentityCheckBox = document.getElementById("identity"); /*아이덴티티 체크박스*/
+  var iden = document.getElementsByClassName("identity");
+  var EditorialCheckBox = document.getElementById("editorial"); /*편집 체크박스*/
+  var edit = document.getElementsByClassName("editorial");
+  for (var i=0;i<all.length;i+=1) {
+  if (AllCheckBox.checked == true){
+    document.getElementsByClassName("courses")[i].style.display = "block";
+    IlluCheckBox.checked = true;
+    MotionCheckBox.checked = true;
+    CommerCheckBox.checked = true;
+    UxuiCheckBox.checked = true;
+    IdentityCheckBox.checked = true;
+    EditorialCheckBox.checked = true;
+
+  } else { document.getElementsByClassName("courses")[i].style.display = "none";
+    IlluCheckBox.checked = false;
+    MotionCheckBox.checked = false;
+    CommerCheckBox.checked = false;
+    UxuiCheckBox.checked = false;
+    IdentityCheckBox.checked = false;
+    EditorialCheckBox.checked = false;};
+   };
+};
+
+  /*다른 작품 클릭 시 모든 작품 체크 해제*/
+  function set(){ document.getElementById("all").checked = false;
+                for (var i=0;i<all.length;i+=1) {document.getElementsByClassName("courses")[i].style.display = "none";};};
+
+  function IlluCheck(){
+  var IlluCheckBox = document.getElementById("illustrations");
+  var illust = document.getElementsByClassName("illustrations");
+    for (var i=0;i<illust.length;i+=1) {
+    if (IlluCheckBox.checked == true){
+        document.getElementsByClassName("illustrations")[i].style.display = "block";
+    } else { document.getElementsByClassName("illustrations")[i].style.display = "none";};
+     }; 
+   };
+  
+  function MotionCheck(){
+  var MotionCheckBox = document.getElementById("video");
+  var motion = document.getElementsByClassName("video");
+    for (var i=0;i<motion.length;i+=1) {
+    if (MotionCheckBox.checked == true){
+        document.getElementsByClassName("video")[i].style.display = "block";
+    } else {document.getElementsByClassName("video")[i].style.display = "none";};
+     }; };
+  
+  function CommercialCheck(){
+  var CommerCheckBox = document.getElementById("commercial");
+  var commercial = document.getElementsByClassName("commercial");
+    for (var i=0;i<commercial.length;i+=1) {
+    if (CommerCheckBox.checked == true){
+        document.getElementsByClassName("commercial")[i].style.display = "block";
+    } else {document.getElementsByClassName("commercial")[i].style.display = "none";};
+     }; };  
+  
+  function UxCheck(){
+  var UxuiCheckBox = document.getElementById("ux");
+  var ux = document.getElementsByClassName("ux");
+    for (var i=0;i<ux.length;i+=1) {
+    if (UxuiCheckBox.checked == true){
+        document.getElementsByClassName("ux")[i].style.display = "block";
+    } else {document.getElementsByClassName("ux")[i].style.display = "none";};
+     }; };  
+  
+  function IdenCheck(){
+  var IdentityCheckBox = document.getElementById("identity");
+  var iden = document.getElementsByClassName("identity");
+    for (var i=0;i<iden.length;i+=1) {
+    if (IdentityCheckBox.checked == true){
+        document.getElementsByClassName("identity")[i].style.display = "block";
+    } else {document.getElementsByClassName("identity")[i].style.display = "none";};
+     }; };  
+  
+  function EdiCheck(){
+  var EditorialCheckBox = document.getElementById("editorial");
+  var edit = document.getElementsByClassName("editorial");
+    for (var i=0;i<edit.length;i+=1) {
+    if (EditorialCheckBox.checked == true){
+        document.getElementsByClassName("editorial")[i].style.display = "block";
+    } else {document.getElementsByClassName("editorial")[i].style.display = "none";};
+     }; };
+</script>
+<script type="text/javascript">
+ (window.onload = function() {  // 화면이 뜬 뒤 처리
+    var obj1 = document.getElementById('nav'); 
+    var obj1_height = obj1.offsetHeight;
+    document.getElementById("ProjectBox").style.marginTop = obj1_height + 'px';
+   
+  })();
+
+
+</script>
+
+
+
+<script src="./common/nav.js"></script>
+<script src="./common/mouse.js"></script>
+<script src="./common/font.js"></script>
+<script src="./common/footer.js"></script>
+
+
+
+</body>
+
