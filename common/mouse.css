@@ -1,0 +1,28 @@
+
+
+
+
+		/*cursor css*/
+		.cursor svg {width:calc(20px + 1vw); min-width: 20px; height: auto;}
+	    .cursor {
+	        pointer-events: none;
+	        position: absolute;
+	        top: 0;
+	        left: 0;
+	        
+	      }
+	    #customCursor1 {z-index: 100;}
+	    #customCursor2 {z-index: 99;}
+	    #customCursor3 {z-index: 98;}
+	    #customCursor4 {z-index: 97;}
+	    #customCursor5 {z-index: 96;}
+	    #customCursor6 {z-index: 95;}
+
+	    .cursor1_Stroke{fill:none;stroke:#335fa4;stroke-miterlimit:10;stroke-width:2px;}
+	    .cursor1_Fill{fill:#fff4b5;}
+
+	    .cursor2_Stroke{fill:none;stroke:#335fa4;stroke-miterlimit:10;stroke-width:2px;}
+	    .cursor2_Fill{fill:#cba5cc;}
+
+	    .cursor3_Stroke{fill:none;stroke:#335fa4;stroke-miterlimit:10;stroke-width:2px;}
+	    .cursor3_Fill{fill:#c4dd90;}
