@@ -1,0 +1,78 @@
+/*푸터*/ 
+@media only screen and (min-width: 767px) { 
+  .flex{display: flex; flex-wrap: wrap; align-items:flex-start; 
+    }
+  footer {height: auto;
+    width:100%;
+    margin-left:-1vw;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-top:10vh;
+    padding-bottom:5vh;
+    color: #13519c;
+    }
+  .footerKr {font-size: calc(0.8vw + 12px); 
+        color: #13519c; line-height: 160%; }
+  .footerEn {font-size: calc(0.5vw + 12px); 
+        color: #13519c; line-height: 100%; }
+  footer div{margin-bottom: 3vh;}
+
+  /*마지막 div*/ 
+  footer div:last-child {
+    margin-bottom: 0;
+    width: 6vw;margin: auto;
+    justify-content: space-between;
+    }
+
+  .topBtn{position: relative; 
+    font-size: calc(0.7vw + 12px);  
+    line-height: 180%;
+    z-index: 3; 
+    cursor: pointer; 
+    height: 8vh;
+  }
+  .topBtn:hover {font-weight: bold;}
+
+  .footerIcon{min-width: 28px; width: 2.5vw; margin: auto;
+    }
+  .topBtn:hover > img{min-width: 30px; width: 2.7vw;}
+
+  .instaIcon {min-width: 20px; width: 1.8vw; margin: auto;
+    }
+  .seoultechIcon {min-width: 20px; width: 2.0vw; margin: auto;
+    }
+  .footer_Left{width:50%; position: absolute; left:0; bottom: 0;z-index: -1;}
+  .footer_Right{width:50%; position: absolute; right:-2vw; bottom: 0;z-index: -1;}
+}
+
+@media only screen and (max-width: 767px) {
+      .flex{display: flex; flex-wrap: wrap; align-items:flex-start; 
+       }
+      .footerKr {font-size:12px; 
+        color: #13519c; line-height: 160%; }
+      .footerEn {font-size:9px; 
+        color: #13519c; line-height: 100%; }
+      footer {height: auto;
+        width:100%;
+        margin-left:0;
+        align-items: center;
+        position: relative;
+        text-align: center;
+        margin-top:10vh;
+        padding-bottom:5vh;
+        color: #13519c;
+        }
+      .topBtn{position: relative; 
+        font-size:24px;  
+        line-height: 180%;
+        z-index: 3; 
+        cursor: pointer; 
+        height: 8vh;
+      }
+      .footerIcon{min-width: 28px; width:8vw; margin: auto;
+    }
+
+      .footer_Left{width:60%; position: absolute; left:-5vw; bottom: 0;z-index: -1;}
+      .footer_Right{width:60%; position: absolute; right:-5vw; bottom: 0;z-index: -1;}
+  }
