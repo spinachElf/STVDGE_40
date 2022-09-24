@@ -18,7 +18,8 @@
    <style type="text/css">
 
       body {overflow-x: hidden;}
-
+      .Row{display: flex; flex-wrap: wrap; align-items:flex-start; 
+    }
       .name {color:#ef8b9e;}
       .undragable{-webkit-user-select:none;
       -moz-user-select:none;
@@ -160,7 +161,7 @@ input:checked ~ label .st2 {stroke:#13519c;}
         
 
 
-       <div id="ProjectBox"class="ProjectBox flex">
+       <div id="ProjectBox"class="ProjectBox Row">
 
           <!-- 일러 23명 -->
           <div class="courses illustrations">
@@ -1230,7 +1231,7 @@ input:checked ~ label .st2 {stroke:#13519c;}
 
           
          </div>
-         <div id="myBtnContainer" class=" flex">
+         <div id="myBtnContainer" class=" Row">
 
           <div>
             <input type="checkbox" name="course" value="all" id="all" onclick="AllCheck()" checked>
