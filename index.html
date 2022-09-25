@@ -2,42 +2,82 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="preconnect" href="https://fonts.googleapis.com"> 
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="nav.css">
 	<title>seoultech_vd_40th_test</title>
-	<script>
-    (function(d) {
-      var config = {
-        kitId: 'zng6tqc',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./common/mouse.css">
+  <link rel="stylesheet" type="text/css" href="./common/nav.css">
+  <link rel="stylesheet" type="text/css" href="./common/common.css">
+  <link rel="stylesheet" type="text/css" href="./common/footer.css">
+
 	<style type="text/css">
-		@font-face{font-family: 'HV'; src: url('HV Clio Regular.ttf');}
-		* {box-sizing: border-box; margin: 0; padding: 0; }
-		html{margin: 0 1vw;
-			font-family: sandoll-gothicneo2,sans-serif; font-weight: 400; font-style: normal; font-size: 18px;  background-color: #f2f6fb;}
-		a {text-decoration: none; color: #13519c;}
-		button {border: none;}
-		footer {background:gray; height:50vh; text-align: center; margin:0 auto;}
-
-
   	/* about(메인) 페이지 스타일 */
   	#bm {width: 100vw;  height: 100vw; margin-left: -1vw; background-color: black;}
   	.main_section{display: flex; margin-top: 10vh;}
   	.label{}
   	.text{font-size: 1.2rem; line-height: 1.5;word-break: keep-all; letter-spacing: -0.4px;}
-  	
-
 	</style>
 
 </head>
 <body>
+	<!-- cursor 코드 -->
+	
+	<div id="customCursor1" class="cursor">
+
+      <svg id="cursor1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor2" class="cursor">
+
+      <svg id="cursor2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor3" class="cursor">
+
+      <svg id="cursor3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+    <div id="customCursor4" class="cursor">
+
+      <svg id="cursor4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor5" class="cursor">
+
+      <svg id="cursor5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor6" class="cursor">
+
+      <svg id="cursor6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+
 
 	<nav id="nav"> 
 			<a href="main.html" class="nav_title flex_8">서울과학기술대학교 시각디자인전공<br>40th 졸업전시<span style="line-height: 70px;">Celeblossom</span></a></div>
@@ -71,91 +111,37 @@
 	</section>
 
 
-<footer>
-	<div class="">
-		<p>서울과학기술대학교 시각디자인학과 제40회 졸업전시</p>
-		<p>2022&copy;Seoul National University of Science and Technology</p>
-	</div>
-	<div class="flex">
-		<a href="https://www.instagram.com/snad_vd/"><img src="./"></a>
-		<img src="./">
-	</div>
-</footer>
+< <!-- 푸터 -->
+    <footer>
+      <img src="./common/footer_Left.svg" class="footer_Left">
+      <img src="./common/footer_Right.svg" class="footer_Right">
+      <div id="topBtn" class="topBtn undragable" onclick="topFunction()" style="z-index: 3;">
+        <img src="./common/ToTop.svg" class="footerIcon">
+        <p>맨 위로 To top</p>
+      </div>
+      <div>
+        <p class="footerKr">서울과학기술대학교 시각디자인학과 제40회 졸업전시</p>
+        <p class="footerEn">2022©Seoul National University of Science and Technology</p>
+      </div>
+      <div class="flex">
+        
+          <a  class="link" href="https://vd.seoultech.ac.kr/" >
+            <img src="./common/seoultech.svg" class="seoultechIcon">
+            
+          </a>
+        
+          <a  class="link" href="https://www.instagram.com/snad_vd/">
+            <img src="./common/instagram.svg" class="instaIcon">
+            
+          </a>
+        
+      </div>
+         
+    </footer>
 
-<script type="text/javascript"> /*스크립트 더 부드러운 버전으로 수정 예정*/
-	
-(function(){
-
-  var doc = document.documentElement;
-  var w = window;
-
-  var prevScroll = w.scrollY || doc.scrollTop;
-  var curScroll;
-  var direction = 0;
-  var prevDirection = 0;
-
-  var header = document.getElementById('nav');
-
-  var checkScroll = function() {
-
-    /*
-    ** Find the direction of scroll
-    ** 0 - initial, 1 - up, 2 - down
-    */
-
-    curScroll = w.scrollY || doc.scrollTop;
-    if (curScroll > prevScroll) { 
-      //scrolled up
-      direction = 2;
-    }
-    else if (curScroll < prevScroll) { 
-      //scrolled down
-      direction = 1;
-    }
-
-    if (direction !== prevDirection) {
-      toggleHeader(direction, curScroll);
-    }
-    
-    prevScroll = curScroll;
-  };
-
-  var toggleHeader = function(direction, curScroll) {
-    if (direction === 2 && curScroll > 52) { 
-      
-      //replace 52 with the height of your header in px
-
-      header.classList.add('hide');
-      prevDirection = direction;
-    }
-    else if (direction === 1) {
-      header.classList.remove('hide');
-      prevDirection = direction;
-    }
-  };
-  
-  window.addEventListener('scroll', checkScroll);
-
-})();
-	
-</script>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-
+  	<script src="./common/nav.js"></script>
+    <script src="./common/mouse.js"></script>
+    <script src="./common/font.js"></script>
+    <script src="./common/footer.js"></script>
 </body>
 </html>
