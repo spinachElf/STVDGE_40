@@ -1,0 +1,487 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>seoultech_vd_40th_test</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./common/mouse.css">
+  <link rel="stylesheet" type="text/css" href="./common/nav.css">
+  <link rel="stylesheet" type="text/css" href="./common/common.css">
+  <link rel="stylesheet" type="text/css" href="./common/footer.css">
+
+	<style type="text/css">
+  	/* about(메인) 페이지 스타일 */
+  	#bm {width: 100vw;  height: 100vw; margin-left: -1vw; background-color: black;}
+  	.main_section{display: flex; margin-top: 10vh;}
+  	.label{}
+  	.text{font-size: 1.2rem; line-height: 1.5;word-break: keep-all; letter-spacing: -0.4px;}
+
+  	 /*profile 페이지용 foldable 코드*/
+		.collapsible, .content{height: auto;}
+		.collapsible {
+			cursor: pointer;
+			background-color: #f2f6fb;
+			width: 100%;
+			border-top: solid #ef8b9e 1px;
+			display: flex;
+			text-align: left;
+			outline: none;
+			font-size: 15px;}
+		.collapsible:hover{
+			background-color: #ef8b9e;}
+		.active{}
+		.content{
+			display: flex;
+			width: 100%;
+			overflow: hidden;
+			background-color: #f2f6fb;
+			max-height: 0;
+			transition: max-height 0.2s ease-out;
+			font-size: 15px;}
+		.content img{width: 100%;}
+		.content div[class*="index"]{
+			word-wrap: break-word;}
+		.hidden{display: none;}
+		.index_top{padding: 10px}
+		.index{padding: 0px 10px 10px;}
+	</style>
+
+
+
+	</style>
+
+</head>
+<body>
+	<!-- cursor 코드 -->
+	
+	<div id="customCursor1" class="cursor">
+
+      <svg id="cursor1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor2" class="cursor">
+
+      <svg id="cursor2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor3" class="cursor">
+
+      <svg id="cursor3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+    <div id="customCursor4" class="cursor">
+
+      <svg id="cursor4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor5" class="cursor">
+
+      <svg id="cursor5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor6" class="cursor">
+
+      <svg id="cursor6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+
+
+
+	<nav id="nav"> 
+			<a href="index.html" class="nav_title flex_8">서울과학기술대학교 시각디자인전공<br>40th 졸업전시<span style="line-height: 70px;">Celeblossom</span></a></div>
+			<div class="flex_1"></div>
+			<div class="nav_menu flex_3">
+				<a href="project.html" class="flex_1">프로젝트<span>Project</span></a>
+				<a href="profile.html" class="flex_1">프로필<span>Profile</span></a>
+				<a href="guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+				</div>
+	</nav>
+	<nav id="m_nav">
+		
+	</nav>
+
+
+
+	<section class="flex_6" style="display:flex; margin-top: 16vh;">
+		<div class="flex_1"></div>
+		<section class="profile flex_4"><!--전체 졸전자 목록 포괄하는 박스--> 
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+
+				<button type="button" class="collapsible "> <!--누르기 전 보이는 요소-->
+						<div class="index_top flex_1">김승민</div>
+						<div class="index_top flex_1"></div>
+						<div class="index_top flex_1">작품(1)</div>
+						<div class="index_top flex_1">작품(2)</div>
+						</button>
+					<div class="content "> <!--누른 후 보이는 요소-->
+						<div class="index flex_1">Kim SeungMin</div>
+						<div class="index flex_1">인스타그램,포트폴리오,비헨스 등</div>
+						<div class="index flex_1"><img src="thumb1.png"></div>
+						<div class="index flex_1"><img src="thumb2.png"></div>
+						</div>
+		</section>
+		<div class="flex_1"></div>
+	</section>
+
+
+
+<!-- 푸터 -->
+    <footer>
+      <img src="./common/footer_Left.svg" class="footer_Left">
+      <img src="./common/footer_Right.svg" class="footer_Right">
+      <div id="topBtn" class="topBtn undragable" onclick="topFunction()" style="z-index: 3;">
+        <img src="./common/ToTop.svg" class="footerIcon">
+        <p>맨 위로 To top</p>
+      </div>
+      <div>
+        <p class="footerKr">서울과학기술대학교 시각디자인학과 제40회 졸업전시</p>
+        <p class="footerEn">2022©Seoul National University of Science and Technology</p>
+      </div>
+      <div class="flex">
+        
+          <a  class="link" href="https://vd.seoultech.ac.kr/" >
+            <img src="./common/seoultech.svg" class="seoultechIcon">
+            
+          </a>
+        
+          <a  class="link" href="https://www.instagram.com/snad_vd/">
+            <img src="./common/instagram.svg" class="instaIcon">
+            
+          </a>
+        
+      </div>
+         
+    </footer>
+
+  	<script src="./common/nav.js"></script>
+    <script src="./common/mouse.js"></script>
+    <script src="./common/font.js"></script>
+    <script src="./common/footer.js"></script>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+		</script>
+
+</body>
+</html>
