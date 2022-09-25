@@ -5,7 +5,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-  <base target="_blank">
+  
 
   <link rel="stylesheet" type="text/css" href="./common/mouse.css">
   <link rel="stylesheet" type="text/css" href="./common/nav.css">
@@ -16,8 +16,9 @@
   <title>프로젝트 Project</title>
 
    <style type="text/css">
-
-      body {overflow-x: hidden;}
+  /*웹*/
+@media only screen and (min-width: 767px) {
+   body {overflow-x: hidden;}
       .Row{display: flex; flex-wrap: wrap; align-items:flex-start; 
     }
       .name {color:#ef8b9e;}
@@ -54,35 +55,97 @@
 
 
 
-.courses {width: 16.4%; height:auto; margin-bottom: 7vh; margin-top: 0; margin-left:0.1vw; margin-right: 0.1vw;
+
+    .courses {width: 16.4%; height:auto; margin-bottom: 7vh; margin-top: 0; margin-left:0.1vw; margin-right: 0.1vw;
+    }
+    .courses img{width:100%; height:auto;}
+    .courses p {font-size: calc(0.5vw + 12px); font-weight: bold; color: #13519c; line-height: 160%; }
+
+    label {display: flex;
+      border-bottom-width:solid #13519c 4px; 
+      padding:0; 
+      line-height: 140%; 
+      font-size: 1vmax;
+      font-weight:bold; 
+      max-width:15vw;
+      min-width:8vw;
+      color:#13519c; 
+      margin:0 0.1vw; 
+      cursor: pointer 
+      background-color:#f2f6fb;  border-collapse:collapse;}
+    label svg {width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
+    .st2{fill:none;stroke:#76c3de;stroke-width:2;stroke-miterlimit:10;}
+      
+    .st21{fill:#f2f6fb;}
+    label {color:#76c3de; flex:1; cursor: pointer;}
+
+    input:checked ~ label {color:#13519c;}
+    input:checked ~ label .st21 {fill:#308FC8;}
+    input:checked ~ label .st2 {stroke:#13519c;}
+
+    /*중간중간 나오는 꽃*/
+    .flower img {width:50%; margin: auto;}
 }
-.courses img{width:100%; height:auto;}
-.courses p {font-size: calc(0.5vw + 12px); font-weight: bold; color: #13519c; line-height: 160%; }
 
-label {display: flex;
-  border-bottom-width:solid #13519c 4px; 
-  padding:0; 
-  line-height: 140%; 
-  font-size: 1vmax;
-  font-weight:bold; 
-  max-width:15vw;
-  min-width:8vw;
-  color:#13519c; 
-  margin:0 0.1vw; 
-  cursor: pointer 
-  background-color:#f2f6fb;  border-collapse:collapse;}
-label svg {width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
-.st2{fill:none;stroke:#76c3de;stroke-width:2;stroke-miterlimit:10;}
-  
-.st21{fill:#f2f6fb;}
-label {color:#76c3de; flex:1; cursor: pointer;}
+@media only screen and (max-width: 767px) {
+  body {overflow-x: hidden;}
+  input {display: none; 
+    }
+  label {display: flex;
+      border-bottom-width:solid #13519c 4px; 
+      padding:0; 
+      line-height: 140%; 
+      font-size:22px;
+      font-weight:bold; 
+      width: 48vw;
+      color:#13519c; 
+      margin:0 0.1vw; 
+      cursor: pointer 
+      background-color:#f2f6fb;  border-collapse:collapse;
+      color:#76c3de; 
+      flex:1; 
+      cursor: pointer;
+      height: 100%;
+      }
+  label svg {width:calc(16px + 5vw); height: auto; margin-right: 0.3vw;}
+  .st2{fill:none;stroke:#76c3de;stroke-width:2;stroke-miterlimit:10;}  
+  .st21{fill:#f2f6fb;}
+  label {color:#76c3de; flex:1; cursor: pointer;}
+  input:checked ~ label {color:#13519c;}
+  input:checked ~ label .st21 {fill:#308FC8;}
+  input:checked ~ label .st2 {stroke:#13519c;}
 
-input:checked ~ label {color:#13519c;}
-input:checked ~ label .st21 {fill:#308FC8;}
-input:checked ~ label .st2 {stroke:#13519c;}
+  /*중간중간 나오는 꽃*/
+  .flower img {width:50%; margin: auto;}
 
-/*중간중간 나오는 꽃*/
-.flower img {width:50%; margin: auto;}
+  .Row{display:block;
+    }
+  .name {color:#ef8b9e;}
+  .ProjectBox {margin:0 auto; width: 100%; min-height: 100vh; 
+    }
+  .courses {width:100%; height:auto; margin-bottom: 7vh; margin-top: 0;}
+  .courses p {font-size: 24px; font-weight: bold; color: #13519c; line-height: 160%; }
+
+  .m_Row {display: flex; flex-wrap: wrap; align-items:flex-start; column-count: 4; webkit-column-count: 4;
+  -moz-column-count: 4;}
+  #myBtnContainer {
+        height:30vh;
+        position:absolute;
+        top:12vh;
+        margin-left:-5vw;
+        position: -webkit-sticky;
+        width:100vw;
+        padding: 0 1vw;
+        flex-wrap: wrap;
+        background-color: #f2f6fb;
+        border-top:solid #13519c 2px;
+        z-index:10;
+        justify-content:space-between;
+        align-items: center;
+      }
+}
+
+
 
 
 
@@ -165,7 +228,7 @@ input:checked ~ label .st2 {stroke:#13519c;}
 
           <!-- 일러 23명 -->
           <div class="courses illustrations">
-              <a href="./illustration/16100901/detail.html">
+              <a href="./illustration/16100901/detail.html" target="blank">
               <img src="./thumbnail/illustration/16100901.jpg">
               <p>제목을 입력하세요.<span class="name"> —김도영</span></p>
               </a>
@@ -197,7 +260,7 @@ input:checked ~ label .st2 {stroke:#13519c;}
 
 
           <div class="courses illustrations">
-              <a href="./illustration/17100841/detail.html">
+              <a href="./illustration/17100841/detail.html" target="blank">
               <img src="./thumbnail/illustration/17100841.jpg">
               <p>제목을 입력하세요.<span class="name"> —노희정</span></p>
               </a>
@@ -1231,7 +1294,7 @@ input:checked ~ label .st2 {stroke:#13519c;}
 
           
          </div>
-         <div id="myBtnContainer" class=" Row">
+         <div id="myBtnContainer" class="Row m_Row">
 
           <div>
             <input type="checkbox" name="course" value="all" id="all" onclick="AllCheck()" checked>
@@ -1516,8 +1579,16 @@ var AllCheckBox = document.getElementById("all"); /*모든 작품*/
 <script type="text/javascript">
  (window.onload = function() {  // 화면이 뜬 뒤 처리
     var obj1 = document.getElementById('nav'); 
+    var obj2 = document.getElementById('myBtnContainer');
     var obj1_height = obj1.offsetHeight;
+    var obj2_height = obj2.offsetHeight;
+  if (matchMedia("only screen and (min-width: 767px)").matches) {
     document.getElementById("ProjectBox").style.marginTop = obj1_height + 'px';
+  } else {
+    document.getElementById("ProjectBox").style.marginTop = obj1_height + obj2_height + 'px';
+  }
+
+    
    
   })();
 
