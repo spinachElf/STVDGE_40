@@ -1,1 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
 
+	<meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+	  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	  <base target="_blank">
+
+	  <link rel="stylesheet" type="text/css" href="./common/mouse.css">
+	  <link rel="stylesheet" type="text/css" href="./common/nav.css">
+	  <link rel="stylesheet" type="text/css" href="./common/common.css">
+	  <link rel="stylesheet" type="text/css" href="./common/footer.css">
+	  <style type="text/css">
+	/*웹*/
+	@media only screen and (min-width: 767px) {
+	  	.main {height: 100vh;padding-bottom:6vh; display: flex;}
+	  	.info {
+        min-height:6vh;
+        height:auto;
+        position: sticky;
+        margin-left:-1vw;
+        position: -webkit-sticky;
+        width:100vw;
+        padding: 0 1vw;
+        display: flex;
+        background-color: #f2f6fb;
+        bottom:0;
+        border-top:solid #13519c 2px;
+        z-index:10;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1em;
+        color:#13519c;
+      }
+      p{color:#13519c;}
+      a:hover{color:#ef8b9e;}
+      input {display: none;}
+      label {cursor: pointer; }
+      label p { padding:0.3vw 0.5vw; border: solid #13519c 2px; border-radius: 50vw; width:4vw; text-align: center; font-size: calc(15px + 0.5rem); }
+      input:checked ~ label p {color:#f2f6fb; background-color:#13519c }
+      .info svg{width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
+      .st2{fill:none;stroke:#13519c;stroke-width:2;stroke-miterlimit:10;}
+  	  .st21{fill:#308FC8;}
+      #left{ padding-top:30vh; display: flex; order:0;}
+      #right{position: relative; margin-right: -1vw; z-index: -1; order:1;}
+      .empty{order:0;}
+      .text{order:1;}
+      
+      
+      img{display: block; width: 100%;height: auto; }
+      #right img{}
+      .track{display: flex; align-items: center;}
+      .Kr{font-size:calc(12px + 0.4rem); line-height: 180%; word-break: keep-all;}
+      .Kr p{margin-bottom:2vh;}
+      .En{display: none; font-size:calc(12px + 0.4rem); line-height: 180%; word-break: keep-all;}
+      .En p{margin-bottom:2vh;}
+      .toggle{position:relative; top:55vh; order:2;}
+      .details{width:100vw; height: auto; margin-left: -1vw;}
+
+}
+@media only screen and (max-width: 767px) {
+
+	.main {padding-bottom:6vh;}
+	  	.info {
+        min-height:6vh;
+        height:auto;
+        position: sticky;
+        margin-left:-5vw;
+        position: -webkit-sticky;
+        width:100vw;
+        padding: 0 5vw;
+        display: flex;
+        background-color: #f2f6fb;
+        bottom:0;
+        border-top:solid #13519c 2px;
+        z-index:10;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1em;
+        color:#13519c;
+      }
+      p{color:#13519c;}
+      input {display: none;}
+      label {cursor: pointer; }
+      label p { padding:1vw; border: solid #13519c 2px; border-radius: 50vw;text-align: center; font-size:36px; }
+      input:checked ~ label p {color:#f2f6fb; background-color:#13519c }
+      .info svg{width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
+      .info div:last-child {display: none;}
+      .info div:2th-child{display: none;}
+      .info div:nth-child(-n+2) {display: none;}
+      .st2{fill:none;stroke:#13519c;stroke-width:2;stroke-miterlimit:10;}
+  	  .st21{fill:#308FC8;}
+      #left{ padding-top:1vh;order:0;}
+      #right{position: relative;  margin-left: -5vw;margin-right: -5vw; z-index: -1; padding-top:12vh;}
+
+      
+      
+      img{display: block; width: 100%;height: auto; }
+      #right img{}
+      .track{display: flex; align-items: center;}
+      .Kr{display:block; font-size:18px; line-height:190%; word-break:break-all;}
+      .En{display: none; font-size:18px; line-height:190%; word-break: break-all;}
+      .toggle{margin-bottom: 1vh;  width:40%;     margin-right: auto;
+    margin-left: auto;}
+      .details{width:100vw; height: auto; margin-left: -5vw;}
+
+
+      
+      .En{}
+      .nav_title .Kr {font-family:sandoll-gothicneo2,sans-serif; font-size: calc(1rem + 3vw); white-space: nowrap;}
+}
+
+	  </style>
+</head>
+<body>
+	<div id="customCursor1" class="cursor">
+
+      <svg id="cursor1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor2" class="cursor">
+
+      <svg id="cursor2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor3" class="cursor">
+
+      <svg id="cursor3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+    <div id="customCursor4" class="cursor">
+
+      <svg id="cursor4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor5" class="cursor">
+
+      <svg id="cursor5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor6" class="cursor">
+
+      <svg id="cursor6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+   <nav id="nav"> 
+      <a href="main.html" class="nav_title flex_8"><span class="Kr">제목을 입력하세요<br>두 줄짜리 제목은 이렇습니다</span><span style="line-height: 70px;" class="En">This is for English title.<br>Second row here</span></a></div>
+      <div class="flex_1"></div>
+      <div class="nav_menu flex_3">
+        <a href="project.html" class="flex_1">프로젝트<span>Project</span></a>
+        <a href="profile.html" class="flex_1">프로필<span>Profile</span></a>
+        <a href="guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+        </div>
+  </nav>
+  <nav id="m_nav">
+    
+  </nav>
+
+
+
+<div class="main">
+	<div id="right" class="flex_6">
+		<img src="thumb1.png">
+	</div>
+	<div id="left" class="flex_6">
+		<div class="toggle flex_1">
+			
+			<input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
+				<label for="languageToggle" ><p>En</p></label>
+
+		</div>
+		<div class="empty flex_1"></div>
+		<div class="text flex_4">
+			<div class="Kr">
+				<p>
+				《장-미셸 오토니엘: 정원과 정원》은 ‘유리구슬 조각’으로 잘 알려진 프랑스의 대표적인 현대미술가 장-미셸 오토니엘의 개인전으로 작가가 최근 10여 년 동안 발전시킨 회화, 조각, 설치작품 70여 점을 선보입니다. 오토니엘은 1980년대 후반부터 개인적 경험을 바탕으로 다양한 문화권의 관습, 신화적 상상력 등을 엮어 작가만의 섬세한 아름다움이 돋보이는 작품을 선보여 왔으며, 미술관 밖의 공간에서 대중의 삶과 자연, 역사와 건축과의 만남을 시도해왔습니다. 이번 전시 《장-미셸 오토니엘: 정원과 정원》은 오토니엘의 이러한 공공 야외 설치작업의 연장선상에서 서울시립미술관과 야외조각공원, 그리고 덕수궁에서 전개됨으로써 다양한 공간과 대중에 접근합니다.
+				</p>
+				<p>김나윤 <a href="">a5555555@gmail.com</a></p>
+			</div>
+			<div class="En">
+				<p>
+				Jean-Michel Autoniel: Garden and Garden is an individual exhibition by Jean-Michel Autoniel, a leading French contemporary artist known for his glass bead sculptures, showcasing about 70 paintings, sculptures and installations that the artist has developed over the past decade. Since the late 1980s, Autoniel has been presenting works that show the artist's delicate beauty by weaving customs and mythological imaginations from various cultures based on personal experience, and has attempted to meet with public life, nature, history and architecture outside the museum. The exhibition "Jang-Michel Autoniel: Gardens and Gardens" is an extension of Otoniel's public outdoor installation work, and is held at the Seoul Museum of Art, Outdoor Sculpture Park, and Deoksugung Palace to access various spaces and the public.
+				</p>
+				<p>Kim Nayun <a href="">a5555555@gmail.com</a></p>
+			</div>
+
+		</div>
+
+
+	</div>
+	
+</div>
+
+<div class="details">
+	<img src="./details/1.jpg">
+	<img src="./details/2.jpg">
+	<img src="./details/3.jpg">
+	<img src="./트랙명/학번/이미지이름.확장자">
+
+</div>
+
+
+<div class="info">
+	<div class="track flex_2">
+		<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+              y="0px" viewBox="0 0 84.6 84.6" style="enable-background:new 0 0 84.6 84.6;" xml:space="preserve">
+
+                <g>
+                  <path class="st21" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                  <path class="st2" d="M8.5,42.3c27.9,3.3,30.5,6,33.8,33.8c3.3-27.9,6-30.5,33.8-33.8c-27.9-3.3-30.5-6-33.8-33.8
+                    C39,36.3,36.3,39,8.5,42.3z"/>
+                </g>
+        </svg>
+        <p>영상디자인 Motion Design</p>
+	</div>
+	<div class="empty flex_1"></div>
+	<div class="name_Kr flex_1">
+		<p>김나윤</p>
+	</div>
+	<div class="name_En flex_1">
+		<p>Kim Nayun</p>
+	</div>
+	<div class="empty flex_1"></div>
+	<div class="sns flex_3">
+		<a href="">a01098843271@gmail.com</a>
+	</div>
+	<div class="sns flex_3">
+		<a href="">a01098843271@gmail.com</a>
+	</div>
+</div>
+
+
+
+
+
+
+  <!-- 푸터 -->
+<footer>
+  <img src="./common/footer_Left.svg" class="footer_Left">
+  <img src="./common/footer_Right.svg" class="footer_Right">
+  <div id="topBtn" class="topBtn undragable" onclick="topFunction()" style="z-index: 3;">
+    <img src="./common/ToTop.svg" class="footerIcon">
+    <p>맨 위로 To top</p>
+  </div>
+  <div>
+    <p class="footerKr">서울과학기술대학교 시각디자인학과 제40회 졸업전시</p>
+    <p class="footerEn">2022©Seoul National University of Science and Technology</p>
+  </div>
+  <div class="flex">
+    
+      <a  class="link" href="https://vd.seoultech.ac.kr/" >
+        <img src="./common/seoultech.svg" class="seoultechIcon">
+        
+      </a>
+    
+      <a  class="link" href="https://www.instagram.com/snad_vd/">
+        <img src="./common/instagram.svg" class="instaIcon">
+        
+      </a>
+    
+  </div>
+     
+</footer>
+
+
+
+
+
+<script src="./common/nav.js"></script>
+<script src="./common/mouse.js"></script>
+<script src="./common/font.js"></script>
+<script src="./common/footer.js"></script>
+<script type="text/javascript">
+	var Toggle = document.getElementById("languageToggle");
+	var Kr = document.getElementsByClassName("Kr");
+	var En = document.getElementsByClassName("En");
+	function LanguageToggle(){
+	for (var i=0;i<Kr.length;i+=1) {
+		if (Toggle.checked == true) {
+			Kr[i].style.display = "none";
+			En[i].style.display = "block";
+		}else {
+			Kr[i].style.display = "block";
+			En[i].style.display = "none";
+		};
+	};
+};
+</script>
+
+</body>
+</html>
