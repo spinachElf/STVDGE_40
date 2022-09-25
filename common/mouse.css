@@ -1,4 +1,4 @@
-
+@media only screen and (min-width: 767px) {
 
 
 
@@ -26,3 +26,11 @@
 
 	    .cursor3_Stroke{fill:none;stroke:#335fa4;stroke-miterlimit:10;stroke-width:2px;}
 	    .cursor3_Fill{fill:#c4dd90;}
+}
+/*모바일*/
+@media only screen and (max-width: 767px) {
+	.cursor {
+	        display: none;
+	        
+	      }
+}
