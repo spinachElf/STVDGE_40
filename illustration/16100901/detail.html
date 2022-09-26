@@ -49,8 +49,8 @@
       .empty{order:0; display:block;opacity: 0;}
       .text{order:1;}
       
-      
-      img{display: block; width: 100%;height: auto; }
+      .main img{display: block; width: 100%;height: auto; }
+      .details > img{display: block; width: 100%;height: auto; }
       #right img{}
       .track{display: flex; align-items: center;}
       .Kr{font-size:calc(12px + 0.4rem); line-height: 180%; word-break: keep-all;}
@@ -60,6 +60,7 @@
       .En p{margin-bottom:2vh;}
       .toggle{position:relative; top:55vh; order:2;}
       .details{width:100vw; height: auto; margin-left: -1vw;}
+
 
 }
 @media only screen and (max-width: 767px) {
@@ -117,6 +118,7 @@
       
       
 }
+
 	  </style>
 </head>
 <body>
@@ -267,11 +269,17 @@
 
   <!-- 푸터 -->
 <footer>
-  <img src="../.././common/footer_Left.svg" class="footer_Left">
+ img src="../.././common/footer_Left.svg" class="footer_Left">
   <img src="../.././common/footer_Right.svg" class="footer_Right">
-  <div id="topBtn" class="topBtn undragable" onclick="topFunction()" style="z-index: 3;">
-    <img src="../.././common/ToTop.svg" class="footerIcon">
-    <p>맨 위로 To top</p>
+  <div id="topBtn" class="undragable flex"style="z-index: 3;">
+  	<div class="topBtn" onclick="topFunction()" >
+    	<img src="../.././common/ToTop.svg" class="footerIcon">
+    	<p>맨 위로 To top</p>
+	</div>
+	<div href="../.././트랙명/학번/detail.html" class="thumbLink topBtn">
+		<img src="../.././common/ToTop.svg" class="footerIcon">
+		<p>다른 작품 보기</p>
+	</div>
   </div>
   <div>
     <p class="footerKr">서울과학기술대학교 시각디자인학과 제40회 졸업전시</p>
