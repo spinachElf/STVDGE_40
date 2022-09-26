@@ -39,14 +39,14 @@
       a:hover{color:#ef8b9e;}
       input {display: none;}
       label {cursor: pointer; }
-      label p { padding:0.3vw 0.5vw; border: solid #13519c 2px; border-radius: 50vw; width:4vw; text-align: center; font-size: calc(15px + 0.5rem); }
+      label p { padding:0.3vw 0.5vw; border: solid #13519c 2px; border-radius: 50vw; width:4vw; text-align: center; font-size: calc(15px + 0.5rem); font-weight:800;}
       input:checked ~ label p {color:#f2f6fb; background-color:#13519c }
       .info svg{width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
       .st2{fill:none;stroke:#13519c;stroke-width:2;stroke-miterlimit:10;}
   	  .st21{fill:#308FC8;}
       #left{ padding-top:30vh; display: flex; order:0;}
       #right{position: relative; margin-right: -1vw; z-index: -1; order:1;}
-      .empty{order:0;}
+      .empty{order:0; display:block;opacity: 0;}
       .text{order:1;}
       
       
@@ -56,6 +56,7 @@
       .Kr{font-size:calc(12px + 0.4rem); line-height: 180%; word-break: keep-all;}
       .Kr p{margin-bottom:2vh;}
       .En{display: none; font-size:calc(12px + 0.4rem); line-height: 180%; word-break: keep-all;}
+      .mEn{display: block;}
       .En p{margin-bottom:2vh;}
       .toggle{position:relative; top:55vh; order:2;}
       .details{width:100vw; height: auto; margin-left: -1vw;}
@@ -85,8 +86,9 @@
       p{color:#13519c;}
       input {display: none;}
       label {cursor: pointer; }
-      label p { padding:1vw; border: solid #13519c 2px; border-radius: 50vw;text-align: center; font-size:36px; }
+      label p { padding:1vw; border: solid #13519c 2px; border-radius: 50vw;text-align: center; font-size:1.2rem; font-weight:800;}
       input:checked ~ label p {color:#f2f6fb; background-color:#13519c }
+      
       .info svg{width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
       .info div:last-child {display: none;}
       .info div:2th-child{display: none;}
@@ -101,18 +103,20 @@
       img{display: block; width: 100%;height: auto; }
       #right img{}
       .track{display: flex; align-items: center;}
-      .Kr{display:block; font-size:18px; line-height:190%; word-break:break-all;}
-      .En{display: none; font-size:18px; line-height:190%; word-break: break-all;}
-      .toggle{margin-bottom: 1vh;  width:40%;     margin-right: auto;
+      .Kr{display:block; font-size:1rem; line-height:180%; word-break:break-all;}
+      .mKr{display:block;}
+      .En{display: none; font-size:1rem; line-height:180%; word-break: break-all;}
+      .mEn{display: none;}
+      .empty{display: none;}
+      .sns {text-align: right;}
+      .toggle{margin-bottom: 1vh;  width:100%;     margin-right: auto;
     margin-left: auto;}
       .details{width:100vw; height: auto; margin-left: -5vw;}
 
 
       
-      .En{}
-      .nav_title .Kr {font-family:sandoll-gothicneo2,sans-serif; font-size: calc(1rem + 3vw); white-space: nowrap;}
+      
 }
-
 	  </style>
 </head>
 <body>
@@ -239,14 +243,14 @@
         </svg>
         <p>영상디자인 Motion Design</p>
 	</div>
-	<div class="empty flex_1"></div>
-	<div class="name_Kr flex_1">
+	<div class="empty flex_1"><p>.</p></div>
+	<div class="name_Kr flex_1 mKr">
 		<p>김나윤</p>
 	</div>
-	<div class="name_En flex_1">
+	<div class="name_En flex_1 mEn">
 		<p>Kim Nayun</p>
 	</div>
-	<div class="empty flex_1"></div>
+	<div class="empty flex_1"><p>.</p></div>
 	<div class="sns flex_3">
 		<a href="">a01098843271@gmail.com</a>
 	</div>
@@ -254,6 +258,7 @@
 		<a href="">a01098843271@gmail.com</a>
 	</div>
 </div>
+
 
 
 
