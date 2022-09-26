@@ -1,0 +1,55 @@
+ @media only screen and (min-width: 767px) {
+   /* 데스크탑 나브 바 */
+  #nav {      
+    color: #13519c;
+      height: 18vh; 
+    position: fixed;
+      top:0;
+      width: 98vw;
+      display: flex;
+      justify-content: space-between;
+      transition:all 0.3s ease;
+      padding:1vh 0;
+      font-weight: bold;}
+
+    #nav.hide {top: -18vh;}    
+
+    .nav_title {font-size: calc(1rem + 3vw); white-space: nowrap;}
+    .nav_title:hover {font-size: 0;}
+    .nav_title span{display: none; font-size: calc(1rem + 3vw); line-height: 70px; font-weight: 100; font-family: HV; color: #ef8b9e;}
+    .nav_title:hover span{display: block;}
+    
+    .nav_menu {display: flex; margin-top: 3px; font-size: calc(0.5rem + 1vw); text-align: right;}
+    .nav_menu span{font-weight: 100; font-family: HV; color: #ef8b9e;}
+    .nav_menu a:hover{font-size: 0;}
+    .nav_menu a span{display: none; font-size: calc(0.5rem + 1vw); text-align: right; font-family: HV; color: #ef8b9e;line-height: 0.8;}
+    .nav_menu a:hover span{display: block;}
+}
+@media only screen and (max-width: 767px) {
+  #nav {      
+    color: #13519c;
+      height: 18vh; 
+    position: fixed;
+      top:0;
+      width: 98vw;
+      display: flex;
+      justify-content: space-between;
+      transition:all 0.3s ease;
+      padding:1vh 0;
+      font-weight: bold;}
+
+    #nav.hide {top: -18vh;}    
+  .nav_title {font-size: calc(1rem + 3vw); white-space: nowrap;}
+  .nav_title span{display: none; font-size: calc(1rem + 3vw); line-height:110%; font-weight: 100; font-family: HV; color: #ef8b9e;}
+  input:checked ~ .nav_title span{display: block;}
+    
+
+     .nav_menu {display: flex; margin-top: 3px; font-size: calc(0.5rem + 1vw); text-align: right;}
+  }
+    .nav_menu span{font-weight: 100; font-family: HV; color: #ef8b9e;}
+    
+    .nav_menu a span{display: none; font-size: calc(0.5rem + 1vw); text-align: right; font-family: HV; color: #ef8b9e;line-height: 0.8;}
+    
+}
+    /* 모바일 나브 바 */
+ 
