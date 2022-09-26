@@ -14,7 +14,7 @@
 	  <link rel="stylesheet" type="text/css" href="../.././common/common.css">
 	  <link rel="stylesheet" type="text/css" href="../.././common/footer.css">
 	  <style type="text/css">
-		/*웹*/
+	/*웹*/
 	@media only screen and (min-width: 767px) {
 	  	.main {height: 100vh;padding-bottom:6vh; display: flex;}
 	  	.info {
@@ -60,7 +60,16 @@
       .En p{margin-bottom:2vh;}
       .toggle{position:relative; top:55vh; order:2;}
       .details{width:100vw; height: auto; margin-left: -1vw;}
-
+      .videoWrap {position: relative;
+			  	padding-bottom: 56.25%;
+			  	/* 16:9 */
+				  padding-top: 25px;
+				  height: 0;}
+  .videoWrap iframe {position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;}
 
 }
 @media only screen and (max-width: 767px) {
@@ -113,11 +122,21 @@
       .toggle{margin-bottom: 1vh;  width:100%;     margin-right: auto;
     margin-left: auto;}
       .details{width:100vw; height: auto; margin-left: -5vw;}
-
+      .videoWrap {position: relative;
+			  	padding-bottom: 56.25%;
+			  	/* 16:9 */
+				  padding-top: 25px;
+				  height: 0;}
+  .videoWrap iframe {position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;}
 
       
       
 }
+
 	  </style>
 </head>
 <body>
@@ -226,9 +245,16 @@
 	<img src="./details/1.jpg">
 	<img src="./details/2.jpg">
 	<img src="./details/3.jpg">
+<div class="videoWrap">
+	<iframe width="560" height="349" src="https://www.youtube.com/embed/bQ06C9zC7jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<div class="videoWrap">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Tqsz8nwsGU4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 	<img src="이미지이름.확장자">
 
 </div>
+
 
 
 <div class="info">
