@@ -16,9 +16,10 @@
 
 
     /* 데스크탑 나브 바 */
+    #m_nav{display: none;}
 	#nav { 			
 		color: #13519c;
-			height: 18vh; 
+		height: 18vh; 
 		position: fixed;
     	top:0;
     	width: 98vw;
@@ -28,7 +29,9 @@
     	padding:1vh 0;
     	font-weight: bold;}
 
-    #nav.hide {top: -18vh;}	   
+    #nav.hide {top: -18vh;}	
+
+    
 
 	.nav_title {font-size: calc(1rem + 3vw); white-space: nowrap;}
 	.nav_title:hover {font-size: 0;}
@@ -44,9 +47,32 @@
 
   	/* 모바일 나브 바 */
  
- @media all and (max-width: 767px){
+@media only screen and (max-width: 767px){
 
- 	#Nav{display: none;}
+    #nav{display: none;}
+ 	#m_nav {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100vw;
+        height:100vh;
+        transition:all 0.3s ease;
+        background-color: #f2f6fb;
+        z-index: 9999;}
+
+    .m_nav{
+        display: flex;
+        width: 100vw;
+        background-color: #f2f6fb;
+    }
+
+    #m_nav.hide {top: -100vh;}
+
+    .m_menu{
+        font-size: 40px;
+        padding-bottom: 10px;
+        background-color: #f2f6fb;
+    }
 
 
- }
+}
