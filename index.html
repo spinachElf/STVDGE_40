@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>seoultech_vd_40th_test</title>
 	
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -21,6 +21,7 @@
 	</style>
 
 </head>
+
 <body>
 	<!-- cursor 코드 -->
 	
@@ -80,7 +81,7 @@
 
 
 	<nav id="nav"> 
-			<a href="index.html" class="nav_title flex_8">서울과학기술대학교 시각디자인전공<br>40th 졸업전시<span style="line-height: 70px;">Celeblossom</span></a></div>
+			<a href="index.html" class="nav_title flex_8">서울과학기술대학교 시각디자인전공<br>40th 졸업전시<span style="line-height: 70px; margin: 0;">Celeblossom</span></a></div>
 			<div class="flex_1"></div>
 			<div class="nav_menu flex_3">
 				<a href="project.html" class="flex_1">프로젝트<span>Project</span></a>
@@ -88,9 +89,19 @@
 				<a href="guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
 				</div>
 	</nav>
+
 	<nav id="m_nav">
-		
+	<button type="button" class="m_nav"> <!--누르기 전 보이는 요소-->
+						<div class="flex_1"><img src="40th_logo.svg" style="height: 18vh; padding-bottom: 10px;"></div>
+						<div class="flex_2"></div>
+						</button>
+	<div class="m_nav_menu"> <!--누른 후 보이는 요소-->
+						<div class="m_menu">프로젝트 Project</div>
+						<div class="m_menu">프로필 Profile</div>
+						<div class="m_menu">방명록 Blossom</div>
+						</div>
 	</nav>
+
 
 	<section id="bm" class="flex_12">애니메이션 들어갈 자리</section>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
