@@ -50,12 +50,12 @@
 /*모바일*/ 
 @media only screen and (max-width: 767px) {
       .flex{display: flex; flex-wrap: wrap; align-items:flex-start;}
-      .footerKr {font-size:20px;
+      .footerKr {font-size:16px;
         color: #13519c; 
-        line-height: 160%; 
+        line-height: 1.6; 
          
         word-break: keep-all;}
-      .footerEn {font-size:15px; 
+      .footerEn {font-size:14px; 
         color: #13519c; 
         line-height: 100%; 
         word-break: keep-all; }
