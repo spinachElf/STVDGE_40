@@ -16,7 +16,7 @@
         color: #13519c; line-height: 160%; }
   .footerEn {font-size: calc(0.5vw + 10px); 
         color: #13519c; line-height: 100%; }
-  footer div{margin-bottom: 3vh;}
+  footer div{margin-bottom: 2vh;}
   /*마지막 div*/ 
   footer > div:last-child {
     margin-bottom: 0;
