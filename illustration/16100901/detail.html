@@ -15,9 +15,9 @@
 	  <link rel="stylesheet" type="text/css" href="../.././common/footer.css">
 	  <style type="text/css">
 	/*웹*/
-	@media only screen and (min-width: 767px) {
-	  	.main {height: 100vh;padding-bottom:6vh; display: flex;}
-	  	.info {
+  @media only screen and (min-width: 767px) {
+      .main {height: 100vh;padding-bottom:6vh; display: flex;}
+      .info {
         min-height:6vh;
         height:auto;
         position: sticky;
@@ -43,7 +43,7 @@
       input:checked ~ label p {color:#f2f6fb; background-color:#13519c }
       .info svg{width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
       .st2{fill:none;stroke:#13519c;stroke-width:2;stroke-miterlimit:10;}
-  	  .st21{fill:#308FC8;}
+      .st21{fill:#308FC8;}
       #left{ padding-top:25vh; display: flex; order:0;}
       #right{position: relative; margin-right: -1vw; z-index: -1; order:1;}
       .empty{order:0; display:block;opacity: 0;}
@@ -61,21 +61,21 @@
       .toggle{position:relative; top:55vh; order:2;}
       .details{width:100vw; height: auto; margin-left: -1vw;}
       .videoWrap {position: relative;
-			  	padding-bottom: 56.25%;
-			  	/* 16:9 */
-				  padding-top: 25px;
-				  height: 0;}
+          padding-bottom: 56.25%;
+          /* 16:9 */
+          padding-top: 25px;
+          height: 0;}
   .videoWrap iframe {position: absolute;
-			  top: 0;
-			  left: 0;
-			  width: 100%;
-			  height: 100%;}
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;}
 
 }
 @media only screen and (max-width: 767px) {
-
-	.main {padding-bottom:6vh;}
-	  	.info {
+ html{overflow-x: hidden;}
+  .main {padding-bottom:6vh;}
+      .info {
         min-height:6vh;
         height:auto;
         position: sticky;
@@ -104,7 +104,7 @@
       .info div:2th-child{display: none;}
       .info div:nth-child(-n+2) {display: none;}
       .st2{fill:none;stroke:#13519c;stroke-width:2;stroke-miterlimit:10;}
-  	  .st21{fill:#308FC8;}
+      .st21{fill:#308FC8;}
       #left{ padding-top:1vh;order:0;}
       #right{position: relative;  margin-left: -5vw;margin-right: -5vw; z-index: -1; padding-top:12vh;}
 
@@ -114,24 +114,31 @@
       #right img{}
       .track{display: flex; align-items: center;}
       .Kr{display:block; font-size:0.9rem; line-height:1.7; word-break:break-all;}
+      .Kr p{ margin-bottom:3vh;}
       .mKr{display:block;}
-      .En{display: none; font-size:1rem; line-height:1.7; word-break: break-all;}
+      .En{display: none; font-size:0.9rrem; line-height:1.6; word-break: break-all;}
       .mEn{display: none;}
       .empty{display: none;}
       .sns {text-align: right;}
-      .toggle{margin-bottom: 1vh;  width:100%;     margin-right: auto;
-    margin-left: auto;}
+      .toggle{margin-bottom: 1vh;
+    width: 20%;
+    margin-right: auto;
+    margin-left: 0;
+    position: fixed;
+    bottom: 15vh;
+    left: 68vw;
+      }
       .details{width:100vw; height: auto; margin-left: -5vw;}
       .videoWrap {position: relative;
-			  	padding-bottom: 56.25%;
-			  	/* 16:9 */
-				  padding-top: 25px;
-				  height: 0;}
-  .videoWrap iframe {position: absolute;
-			  top: 0;
-			  left: 0;
-			  width: 100%;
-			  height: 100%;}
+          padding-bottom: 56.25%;
+          /* 16:9 */
+          padding-top: 25px;
+          height: 0;}
+      .videoWrap iframe {position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;}
 
       
       
