@@ -336,41 +336,47 @@
 <script src="../.././common/font.js"></script>
 <script src="../.././common/footer.js"></script>
 <script type="text/javascript">
-	var Toggle = document.getElementById("languageToggle");
-	var Kr = document.getElementsByClassName("Kr");
-	var mKr = document.getElementsByClassName("mKr");
-	var En = document.getElementsByClassName("En");
-	var mEn = document.getElementsByClassName("mEn");
+  window.onload = LanguageToggle();
+  
 function LanguageToggle(){
-	  if (matchMedia("only screen and (min-width: 767px)").matches) {
-	  	for (var i=0;i<Kr.length;i+=1) {
-			if (Toggle.checked == true) {
-				Kr[i].style.display = "none";
-				En[i].style.display = "block";
-			} else {
-				Kr[i].style.display = "block";
-				En[i].style.display = "none";
-			};
-		};
-	} else {
-		for (var i=0;i<Kr.length;i+=1) {
-			if (Toggle.checked == true) {
-				Kr[i].style.display = "none";
-				mKr[i].style.display = "none";
-				En[i].style.display = "block";
-				mEn[i].style.display = "block";
-			} else {
-				Kr[i].style.display = "block";
-				mKr[i].style.display = "block";
-				En[i].style.display = "none";
-				mEn[i].style.display = "none";
-			};
-		};
-	};
-		
+  var Toggle = document.getElementById("languageToggle");
+  var Kr = document.getElementsByClassName("Kr");
+  var mKr = document.getElementsByClassName("mKr");
+  var En = document.getElementsByClassName("En");
+  var mEn = document.getElementsByClassName("mEn");
+    if (matchMedia("only screen and (min-width: 767px)").matches) {
+      for (var i=0;i<Kr.length;i+=1) {
+      if (Toggle.checked == true) {
+        Kr[i].style.display = "none";
+        En[i].style.display = "block";
+        document.getElementById("Ltoggle").innerHTML = "한글";
+      } else {
+        Kr[i].style.display = "block";
+        En[i].style.display = "none";
+        document.getElementById("Ltoggle").innerHTML = "En";
+      };
+    };
+  } else {
+      for (var i=0;i<Kr.length;i+=1) {
+      if (Toggle.checked == true) {
+        Kr[i].style.display = "none";
+        mKr[i].style.display = "none";
+        En[i].style.display = "block";
+        mEn[i].style.display = "block";
+        document.getElementById("Ltoggle").innerHTML = "한글";
+      } else {
+        Kr[i].style.display = "block";
+        mKr[i].style.display = "block";
+        En[i].style.display = "none";
+        mEn[i].style.display = "none";
+        document.getElementById("Ltoggle").innerHTML = "En";
+      };
+    };
+  };
+    
 
-		
-	};
+    
+  };
 
 </script>
 
