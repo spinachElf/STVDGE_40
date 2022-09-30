@@ -48,32 +48,62 @@
   	/* 모바일 나브 바 */
  
 @media only screen and (max-width: 767px){
-
+    img{width: 100%;}
     #nav{display: none;}
  	#m_nav {
+        padding: 10px 0 0 0;
         display: block;
         position: fixed;
         top: 0;
-        width: 100vw;
-        height:100vh;
+        width: 100%;
+        height: 100px;
         transition:all 0.3s ease;
-        background-color: #f2f6fb;
-        z-index: 9999;}
-
-    .m_nav{
+        }
+    #m_nav.hide{top: -100px;}
+    header{
         display: flex;
-        width: 100vw;
-        background-color: #f2f6fb;
+        justify-content: space-between;
+        z-index: 30;
     }
+    header a{
+        width: 220px;
+        z-index: 50;
+    }
+    #menuBtn{width: 50px; z-index: 100; cursor: pointer; transition: all 0.3s ease-in-out;}
 
-    #m_nav.hide {top: -100vh;}
-
-    .m_menu{
-        font-size: 40px;
-        padding-bottom: 10px;
+    #navBox{
         background-color: #f2f6fb;
+        padding: 200px 0 0 0;
+        height: 400px;
+        width: 100%;
+        z-index: 2;
+    }
+    #navBox a{
         display: block;
+        font-size: 35px;
+        line-height: 50px;}
+
+    #dimmed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: -2;
+        background-color: rgba(0, 0, 0, 0.5);
     }
+    .menuWrap{
+        position: fixed;
+        top: -400px;
+        transition: all 0.3s ease-in-out;
+    }
+    .menuWrap.on{
+        top: 0;
+    }
+    .btnRotate {
+        transform: rotate(-90deg);
+        transition: all 0.3s ease-in-out;
+      }
 
 
 }
