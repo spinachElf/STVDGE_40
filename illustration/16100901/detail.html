@@ -28,21 +28,24 @@
             /**맨 위 파트*/
             .fullImg {width:100%; height:100vh; overflow : hidden; display: flex; align-items: center;
               background: url(main.jpg); background-attachment: fixed; background-size: 100% auto;}
-            .main{min-height: 100vh; 
-                 
+            .main{
+                 min-height: 100vh;
                 display: flex;}
 
                 #right{z-index: -1;
                     display: flex;
-                    order:0; 
-                    padding-top:25vh; 
+                    order:1; 
+                    padding-top:28vh; 
                     padding-bottom: 6vh;
+                    align-items: center;
                     }
                         #right img{width:100%;}
 
-                #left{padding-top:25vh; 
+                #left{padding-top:28vh; 
                     display: flex; 
-                    order:1;}
+                    
+                    order:0;}
+                    
                         .toggle{order:2; margin-bottom: 3vh;}
                         .toggle p {padding:1vh 1vw; border-radius: 20%;}
                         
@@ -171,21 +174,16 @@
   </nav>
   <nav id="m_nav"></nav>
 
-    <div id="fullImg" class="fullImg">
-        
-      </div>
-    
-    <div id="Project">  
-    
-      <section class="main">
+    <div id="fullImg" class="fullImg"></div>
+    <section class="main">
         
           <div id="right"  class="flex_1">
-              <div class="flex_1"></div>
+              
               <div class="flex_5">
               <!-- 아래의 큰따옴표 안에 썸네일 파일 이름을 입력해 주세요. 학번.jpg 입니다. (예:17100808.jpg)-->
                   <img src="thumb.jpg">
               </div>
-              
+              <div class="flex_1"></div>
           </div>
           
 
@@ -196,7 +194,7 @@
               <div class="empty flex_1"></div>
 
               <div class="text flex_4">
-                                <div class="toggle">
+                  <div class="toggle">
                         <div class="container">
                             <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
                             <label for="languageToggle" class="Ltoggle" style="display: flex;">
@@ -229,6 +227,10 @@
 
               <div class="empty flex_1" style="order:4;"></div>
       </section>
+    
+    <div id="Project">  
+    
+      
           
       <div id="details" class="details">
           <!--큰따옴표 안에 이미지 파일 이름을 순서대로 적어 주세요.-->
