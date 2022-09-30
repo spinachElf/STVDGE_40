@@ -17,7 +17,7 @@
         @media only screen and (min-width: 767px) {
             /**좌우 여백 마진*/
             html{overflow-x: hidden;}
-            body > section{padding:0 1vw;}
+            section{padding:0 1vw;}
             
             nav {margin:0 1vw;}
 
@@ -26,20 +26,23 @@
             input{display: none;}
 
             /**맨 위 파트*/
+            .fullImg {width:100%; height:100vh; overflow : hidden; display: flex; align-items: center;
+              background: url(main.jpg); background-attachment: fixed; background-size: 100% auto;}
             .main{height: 100vh; 
-                padding-bottom:6vh; 
+                 
                 display: flex;}
 
                 #right{z-index: -1;
                     display: flex;
-                    order:1; 
-                    align-self:flex-end;
+                    order:0; 
+                    padding-top:25vh; 
+                    
                     margin-right:-1vw;}
                         #right img{width:100%;}
 
                 #left{padding-top:25vh; 
                     display: flex; 
-                    order:0;}
+                    order:1;}
                         .toggle{order:2;}
                         .container{width:4vw; height:4vw; position: relative; top:52vh;}
                                 label{ cursor: pointer;}
@@ -48,6 +51,9 @@
 
                                 .toggleBtn{fill:#f2f6fb;stroke:#305c9b;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}
                                 #Ltoggle{color:#305c9b; position: relative; top: -50%; transform: translateY(-70%); text-align: center; font-size: calc(15px + 0.5rem); font-weight:100;}
+
+                                
+                                
                                 
                                 
                         .empty{order:0; display:block; opacity: 0;}
@@ -88,6 +94,7 @@
                 font-size: 1em;
                 color:#13519c;
               }
+                    .info img{width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
                     .track{display: flex; align-items: center;}
                     .empty2{display: none;}
 
@@ -152,7 +159,7 @@
 
     <nav id="nav"> 
       <!-- 이곳에 제목을 입력해 주세요. 한 줄짜리 제목인 경우 <br> ~ 이렇습니다, <br> ~ here 부분은 지워 주세요.-->
-      <a href="main.html" class="nav_title flex_8"><p class="mKr">제목을 입력하세요</p><span class="mEn">This is for English title.</span></a></div>
+      <a href="main.html" class="nav_title flex_8"><p class="mKr">제목을 입력하세요<br>두 줄인 경우 여기에 입력해주세요.</p><span class="mEn">This is for English title.<br>Second row here</span></a></div>
       <div class="flex_1"></div>
       <div class="nav_menu flex_3">
         <a href="../.././project.html" class="flex_1">프로젝트<span>Project</span></a>
@@ -162,87 +169,98 @@
   </nav>
   <nav id="m_nav"></nav>
 
+    <div id="fullImg" class="fullImg">
+        
+      </div>
+    
+    <div id="Project">    
+      <section class="main">
+        
+          <div id="right"  class="flex_1">
+              <div class="flex_2"></div>
+              <div class="flex_4">
+              <!-- 아래의 큰따옴표 안에 썸네일 파일 이름을 입력해 주세요. 학번.jpg 입니다. (예:17100808.jpg)-->
+                  <img src="thumb.jpg">
+              </div>
+              
+          </div>
+          
 
-    <section class="main">
-        <div id="right" class="flex_1">
-            <!-- 아래의 큰따옴표 안에 썸네일 파일 이름을 입력해 주세요. 학번.jpg 입니다. (예:17100808.jpg)-->
-            <img src="thumb.jpg">
-        </div>
 
-        <div id="left" class="flex_1">
-            <div class="toggle flex_1">
+
+          <div id="left" class="flex_1">
+               <div class="toggle flex_1">
                 <div class="container">
                     <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
                     <label for="languageToggle" class="Ltoggle">
-                        <svg id="toggle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230.33 243.62"><path class="toggleBtn" d="M156.05,50.99c38.48-66.65-120.26-66.65-81.78,0C35.79-15.66-43.58,121.81,33.39,121.81c-76.96,0,2.41,137.47,40.89,70.82-38.48,66.65,120.26,66.65,81.78,0,38.48,66.65,117.85-70.82,40.89-70.82,76.96,0-2.41-137.47-40.89-70.82Z"/>
-                        </svg>
-                        <p id="Ltoggle"></p>
+                        <img src="../.././common/KrToEn.svg" id="imgId">
                     </label>
                     
                 </div>
+              </div>
+
+              <div class="empty flex_1"></div>
+
+              <div class="text flex_4">
+                  <div class="Kr">
+                      <!--한글 작품 설명을 입력해 주세요.-->
+                      <p>
+                          《장-미셸 오토니엘: 정원과 정원》은 ‘유리구슬 조각’으로 잘 알려진 프랑스의 대표적인 현대미술가 장-미셸 오토니엘의 개인전으로 작가가 최근 10여 년 동안 발전시킨 회화, 조각, 설치작품 70여 점을 선보입니다. 오토니엘은 1980년대 후반부터 개인적 경험을 바탕으로 다양한 문화권의 관습, 신화적 상상력 등을 엮어 작가만의 섬세한 아름다움이 돋보이는 작품을 선보여 왔으며, 미술관 밖의 공간에서 대중의 삶과 자연, 역사와 건축과의 만남을 시도해왔습니다. 이번 전시 《장-미셸 오토니엘: 정원과 정원》은 오토니엘의 이러한 공공 야외 설치작업의 연장선상에서 서울시립미술관과 야외조각공원, 그리고 덕수궁에서 전개됨으로써 다양한 공간과 대중에 접근합니다.
+                      </p>
+                      <!--한글 이름과 대표 sns 주소를 입력해 주세요.-->
+                      <p>김나윤 <a href="">a5555555@gmail.com</a></p>
+                  </div>
+                  <div class="En">
+                      <!--영어 작품 설명을 입력해 주세요.-->
+                      <p>
+                          Jean-Michel Autoniel: Garden and Garden is an individual exhibition by Jean-Michel Autoniel, a leading French contemporary artist known for his glass bead sculptures, showcasing about 70 paintings, sculptures and installations that the artist has developed over the past decade. Since the late 1980s, Autoniel has been presenting works that show the artist's delicate beauty by weaving customs and mythological imaginations from various cultures based on personal experience, and has attempted to meet with public life, nature, history and architecture outside the museum. The exhibition "Jang-Michel Autoniel: Gardens and Gardens" is an extension of Otoniel's public outdoor installation work, and is held at the Seoul Museum of Art, Outdoor Sculpture Park, and Deoksugung Palace to access various spaces and the public.
+                      </p>
+                      <!--영어 이름과 대표 sns 주소를 입력해 주세요.-->
+                      <p>Kim Nayun <a href="">a5555555@gmail.com</a></p>
             </div>
-
-            <div class="empty flex_1"></div>
-
-            <div class="text flex_4">
-                <div class="Kr">
-                    <!--한글 작품 설명을 입력해 주세요.-->
-                    <p>
-                        《장-미셸 오토니엘: 정원과 정원》은 ‘유리구슬 조각’으로 잘 알려진 프랑스의 대표적인 현대미술가 장-미셸 오토니엘의 개인전으로 작가가 최근 10여 년 동안 발전시킨 회화, 조각, 설치작품 70여 점을 선보입니다. 오토니엘은 1980년대 후반부터 개인적 경험을 바탕으로 다양한 문화권의 관습, 신화적 상상력 등을 엮어 작가만의 섬세한 아름다움이 돋보이는 작품을 선보여 왔으며, 미술관 밖의 공간에서 대중의 삶과 자연, 역사와 건축과의 만남을 시도해왔습니다. 이번 전시 《장-미셸 오토니엘: 정원과 정원》은 오토니엘의 이러한 공공 야외 설치작업의 연장선상에서 서울시립미술관과 야외조각공원, 그리고 덕수궁에서 전개됨으로써 다양한 공간과 대중에 접근합니다.
-                    </p>
-                    <!--한글 이름과 대표 sns 주소를 입력해 주세요.-->
-                    <p>김나윤 <a href="">a5555555@gmail.com</a></p>
-                </div>
-                <div class="En">
-                    <!--영어 작품 설명을 입력해 주세요.-->
-                    <p>
-                        Jean-Michel Autoniel: Garden and Garden is an individual exhibition by Jean-Michel Autoniel, a leading French contemporary artist known for his glass bead sculptures, showcasing about 70 paintings, sculptures and installations that the artist has developed over the past decade. Since the late 1980s, Autoniel has been presenting works that show the artist's delicate beauty by weaving customs and mythological imaginations from various cultures based on personal experience, and has attempted to meet with public life, nature, history and architecture outside the museum. The exhibition "Jang-Michel Autoniel: Gardens and Gardens" is an extension of Otoniel's public outdoor installation work, and is held at the Seoul Museum of Art, Outdoor Sculpture Park, and Deoksugung Palace to access various spaces and the public.
-                    </p>
-                    <!--영어 이름과 대표 sns 주소를 입력해 주세요.-->
-                    <p>Kim Nayun <a href="">a5555555@gmail.com</a></p>
+              </div>
+              
           </div>
-            </div>
-            
-        </div>
-    </section>
-        
-    <div id="details" class="details">
-        <!--큰따옴표 안에 이미지 파일 이름을 순서대로 적어 주세요.-->
-        <img src="./1.jpg">
-        <img src="./2.jpg">
-        <img src="./3.jpg">
-        <div class="videoWrap">
-            <!--영상의 경우 여기 아래에 <퍼가기>링크를 붙여넣어 주세요.-->
-            <iframe width="560" height="349" src="https://www.youtube.com/embed/bQ06C9zC7jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </div>
+      </section>
+          
+      <div id="details" class="details">
+          <!--큰따옴표 안에 이미지 파일 이름을 순서대로 적어 주세요.-->
+          <img src="./1.jpg">
+          <img src="./2.jpg">
+          <img src="./3.jpg">
+          <div class="videoWrap">
+              <!--영상의 경우 여기 아래에 <퍼가기>링크를 붙여넣어 주세요.-->
+              <iframe width="560" height="349" src="https://www.youtube.com/embed/bQ06C9zC7jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      </div>
 
 
 
-    <div id="info" class="info">
-        <div class="track flex_2">
-            <img src="../.././common/sparkle.svg">
-            <!--트랙 이름이 옳은지 확인해 주세요.-->
-            <p>영상디자인 Motion Design</p>
-        </div>
-        <div class="empty flex_1"><p>.</p></div>
-        <div class="name_Kr flex_1 mKr">
-            <!--한글 이름을 입력해 주세요.-->
-            <p>김나윤</p>
-        </div>
-        <div class="name_En flex_1 mEn">
-            <!--영어 이름을 입력해 주세요.-->
-            <p>Kim Nayun</p>
-        </div>
-        <div class="empty flex_1"><p>.</p></div>
-        <div class="sns flex_3">
-            <!--SNS 링크와 이름을 입력해 주세요.-->
-            <a href="">a01098843271@gmail.com</a>
-        </div>
-        <div class="sns flex_3">
-            <!--SNS 링크와 이름을 입력해 주세요. 없다면 하트를 지워 주세요.-->
-            <a href="">a01098843271@gmail.com</a>
-        </div>
+      <div id="info" class="info">
+          <div class="track flex_2">
+              <img src="../.././common/sparkle.svg">
+              <!--트랙 이름이 옳은지 확인해 주세요.-->
+              <p>영상디자인 Motion Design</p>
+          </div>
+          <div class="empty flex_1"><p>.</p></div>
+          <div class="name_Kr flex_1 mKr">
+              <!--한글 이름을 입력해 주세요.-->
+              <p>김나윤</p>
+          </div>
+          <div class="name_En flex_1 mEn">
+              <!--영어 이름을 입력해 주세요.-->
+              <p>Kim Nayun</p>
+          </div>
+          <div class="empty flex_1"><p>.</p></div>
+          <div class="sns flex_3">
+              <!--SNS 링크와 이름을 입력해 주세요.-->
+              <a href="">a01098843271@gmail.com</a>
+          </div>
+          <div class="sns flex_3">
+              <!--SNS 링크와 이름을 입력해 주세요. 없다면 하트를 지워 주세요.-->
+              <a href="">a01098843271@gmail.com</a>
+          </div>
+      </div>
     </div>
     
   
@@ -290,9 +308,7 @@
 <script src="../.././common/font.js"></script>
 <script src="../.././common/footer.js"></script>
 <script type="text/javascript">
-window.onload = LanguageToggle();
-  
-function LanguageToggle(){
+  function LanguageToggle(){
   var Toggle = document.getElementById("languageToggle");
   var Kr = document.getElementsByClassName("Kr");
   var mKr = document.getElementsByClassName("mKr");
@@ -303,11 +319,11 @@ function LanguageToggle(){
       if (Toggle.checked == true) {
         Kr[i].style.display = "none";
         En[i].style.display = "block";
-        document.getElementById("Ltoggle").innerHTML = "한글";
+        document.getElementById("imgId").src = "../.././common/EnToKr.svg";
       } else {
         Kr[i].style.display = "block";
         En[i].style.display = "none";
-        document.getElementById("Ltoggle").innerHTML = "En";
+        document.getElementById("imgId").src = "../.././common/KrToEn.svg";
       };
     };
   } else {
@@ -317,13 +333,13 @@ function LanguageToggle(){
         mKr[i].style.display = "none";
         En[i].style.display = "block";
         mEn[i].style.display = "block";
-        document.getElementById("Ltoggle").innerHTML = "한글";
+        document.getElementById("imgId").src = "../.././common/EnToKr.svg";
       } else {
         Kr[i].style.display = "block";
         mKr[i].style.display = "block";
         En[i].style.display = "none";
         mEn[i].style.display = "none";
-        document.getElementById("Ltoggle").innerHTML = "En";
+        document.getElementById("imgId").src = "../.././common/KrToEn.svg";
       };
     };
   };
@@ -331,8 +347,9 @@ function LanguageToggle(){
 
     
   };
-
 </script>
+
+      
 
 </body>
 </html>
