@@ -111,7 +111,7 @@
               .empty {display: none;}
           #left{}
               .togglePC{display: none;}
-              .toggleM{position: sticky; bottom:7vh; right:5vw; border-radius:3vw;}
+              .toggleM{position: absolute; bottom:7vh; right:5vw; width:15vw; border-radius:3vw;}
                         .Ltoggle{justify-content: flex-end;}
                         .toggleM p{padding:2vw 2vw; border-radius: 20%;}
               .text{order:1;}
@@ -133,12 +133,10 @@
 
       #Project{height: 100vh;}
               .info {height:6vh;
-                position: sticky;
                 width:100%;
                 padding: 0 5vw;
                 display: flex;
                 background-color: #f2f6fb;
-                bottom:0;
                 border-top:solid #13519c 2px;
                 z-index:10;
                 justify-content: space-between;
@@ -296,8 +294,8 @@
          <div class="toggleM">
                         <div class="container">
                             <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
-                            <label for="languageToggle" class="Ltoggle" style="display: flex;">
-                                <p id="mKr">한글</p><p id="mEn">En</p>
+                            <label for="languageToggle" class="Ltoggle">
+                                <img src="../.././common/KrToEn.svg" id="imgId">
                            </label>
                     
                         </div>
@@ -377,22 +375,26 @@
 <script src="../.././common/font.js"></script>
 <script src="../.././common/footer.js"></script>
 <script type="text/javascript">
-  
-
-  window.onload = LanguageToggle();
-  function LanguageToggle(){
-    function EnMode() {document.getElementById("Kr").style.fontWeight = "200";
-        document.getElementById("Kr").style.color = "#13519c";
-        document.getElementById("Kr").style.backgroundColor = "#f2f6fb";
-        document.getElementById("En").style.color = "#f2f6fb";
-        document.getElementById("En").style.fontWeight = "800";
-        document.getElementById("En").style.backgroundColor = "#13519c";
-        document.getElementById("mKr").style.fontWeight = "200";
+  function MEnMode(){document.getElementById("mKr").style.fontWeight = "200";
         document.getElementById("mKr").style.color = "#13519c";
         document.getElementById("mKr").style.backgroundColor = "#f2f6fb";
         document.getElementById("mEn").style.color = "#f2f6fb";
         document.getElementById("mEn").style.fontWeight = "800";
         document.getElementById("mEn").style.backgroundColor = "#13519c";};
+
+  function MKrMode(){document.getElementById("mEn").style.fontWeight = "200";
+        document.getElementById("mEn").style.color = "#13519c";
+        document.getElementById("mEn").style.backgroundColor = "#f2f6fb";
+        document.getElementById("mKr").style.color = "#f2f6fb";
+        document.getElementById("mKr").style.fontWeight = "800";
+        document.getElementById("mKr").style.backgroundColor = "#13519c";};      
+  function EnMode() {document.getElementById("Kr").style.fontWeight = "200";
+        document.getElementById("Kr").style.color = "#13519c";
+        document.getElementById("Kr").style.backgroundColor = "#f2f6fb";
+        document.getElementById("En").style.color = "#f2f6fb";
+        document.getElementById("En").style.fontWeight = "800";
+        document.getElementById("En").style.backgroundColor = "#13519c";
+        };
 
   function KrMode(){document.getElementById("En").style.fontWeight = "200";
         document.getElementById("En").style.color = "#13519c";
@@ -400,12 +402,11 @@
         document.getElementById("Kr").style.color = "#f2f6fb";
         document.getElementById("Kr").style.fontWeight = "800";
         document.getElementById("Kr").style.backgroundColor = "#13519c";
-        document.getElementById("mEn").style.fontWeight = "200";
-        document.getElementById("mEn").style.color = "#13519c";
-        document.getElementById("mEn").style.backgroundColor = "#f2f6fb";
-        document.getElementById("mKr").style.color = "#f2f6fb";
-        document.getElementById("mKr").style.fontWeight = "800";
-        document.getElementById("mKr").style.backgroundColor = "#13519c";};
+        };
+
+  window.onload = LanguageToggle();
+  function LanguageToggle(){
+    
   var Toggle = document.getElementById("languageToggle");
   var Kr = document.getElementsByClassName("Kr");
   var mKr = document.getElementsByClassName("mKr");
@@ -430,6 +431,7 @@
         mKr[i].style.display = "none";
         En[i].style.display = "block";
         mEn[i].style.display = "block";
+        document.getElementById("imgId").src = "../.././common/EnToKr.svg";
         EnMode();
       } else {
         Kr[i].style.display = "block";
@@ -437,6 +439,7 @@
         En[i].style.display = "none";
         mEn[i].style.display = "none";
         KrMode();
+        document.getElementById("imgId").src = "../.././common/KrToEn.svg";
       };
     };
   };
