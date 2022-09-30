@@ -377,7 +377,11 @@
 <script src="../.././common/font.js"></script>
 <script src="../.././common/footer.js"></script>
 <script type="text/javascript">
-  function EnMode() {document.getElementById("Kr").style.fontWeight = "200";
+  
+
+  window.onload = LanguageToggle();
+  function LanguageToggle(){
+    function EnMode() {document.getElementById("Kr").style.fontWeight = "200";
         document.getElementById("Kr").style.color = "#13519c";
         document.getElementById("Kr").style.backgroundColor = "#f2f6fb";
         document.getElementById("En").style.color = "#f2f6fb";
@@ -402,9 +406,6 @@
         document.getElementById("mKr").style.color = "#f2f6fb";
         document.getElementById("mKr").style.fontWeight = "800";
         document.getElementById("mKr").style.backgroundColor = "#13519c";};
-
-  window.onload = LanguageToggle();
-  function LanguageToggle(){
   var Toggle = document.getElementById("languageToggle");
   var Kr = document.getElementsByClassName("Kr");
   var mKr = document.getElementsByClassName("mKr");
