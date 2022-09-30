@@ -111,8 +111,9 @@
               .empty {display: none;}
           #left{}
               .togglePC{display: none;}
-              .toggleM{position: fixed; bottom:6vh; right:0; background-color:#76c3de; border-radius:3vw}
-                        .toggleM p {padding:2vw 2vw; border-radius: 20%;}
+              .toggleM{position: sticky; bottom:7vh; right:5vw; border-radius:3vw;}
+                        .Ltoggle{justify-content: flex-end;}
+                        .toggleM p{padding:2vw 2vw; border-radius: 20%;}
               .text{order:1;}
                         .Kr{font-size:16px; line-height: 1.6; word-break: keep-all;}
                         .Kr p{margin-bottom:2vh;}
@@ -130,14 +131,11 @@
                         width: 100%;
                         height: 100%;}
 
-
-              .info {
-                min-height:6vh;
-                height:auto;
+      #Project{height: 100vh;}
+              .info {height:6vh;
                 position: sticky;
-                position: -webkit-sticky;
                 width:100%;
-                padding: 0 1vw;
+                padding: 0 5vw;
                 display: flex;
                 background-color: #f2f6fb;
                 bottom:0;
@@ -146,15 +144,12 @@
                 justify-content: space-between;
                 align-items: center;
                 font-size: 1em;
-                color:#13519c;
-                
-              }
+                color:#13519c;}
+              .sns1{text-align: right;}
+              .sns2{display: none;}
 
-                    .info:last-child {
-                  display: none;
-                }
+               
                     .track{display:none;}
-                    
                     .empty2{display: none;}
 
                         
@@ -277,15 +272,7 @@
                       <!--영어 이름과 대표 sns 주소를 입력해 주세요.-->
                       <p>Kim Nayun <a href="">a5555555@gmail.com</a></p>
                   </div>
-                  <div class="toggleM">
-                        <div class="container">
-                            <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
-                            <label for="languageToggle" class="Ltoggle" style="display: flex;">
-                                <p id="Kr">한글</p><p id="En">En</p>
-                           </label>
-                    
-                        </div>
-                  </div>    
+                 
               </div>
 
 
@@ -306,7 +293,15 @@
               <iframe width="560" height="349" src="https://www.youtube.com/embed/bQ06C9zC7jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
       </div>
-
+         <div class="toggleM">
+                        <div class="container">
+                            <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
+                            <label for="languageToggle" class="Ltoggle" style="display: flex;">
+                                <p id="mKr">한글</p><p id="mEn">En</p>
+                           </label>
+                    
+                        </div>
+          </div>
 
 
       <div id="info" class="info">
@@ -325,18 +320,19 @@
           </div>
           <div class="empty flex_1"><p>.</p></div>
           <div class="empty flex_1"><p>.</p></div>
-          <div class="sns flex_3">
+          <div class="sns1 flex_3">
               <!--SNS 링크와 이름을 입력해 주세요.-->
               <a href="">a01098843271@gmail.com</a>
           </div>
-          <div class="sns flex_3">
+          <div class="sns2 flex_3">
               <!--SNS 링크와 이름을 입력해 주세요. 없다면 하트를 지워 주세요.-->
               <a href="">a01098843271@gmail.com</a>
           </div>
       </div>
-    </div>
     
-  
+    
+    
+    
   <!-- 푸터 -->
     <footer>
       <img src="../.././common/footer_Left.svg" class="footer_Left">
@@ -386,14 +382,26 @@
         document.getElementById("Kr").style.backgroundColor = "#f2f6fb";
         document.getElementById("En").style.color = "#f2f6fb";
         document.getElementById("En").style.fontWeight = "800";
-        document.getElementById("En").style.backgroundColor = "#13519c";};
+        document.getElementById("En").style.backgroundColor = "#13519c";
+        document.getElementById("mKr").style.fontWeight = "200";
+        document.getElementById("mKr").style.color = "#13519c";
+        document.getElementById("mKr").style.backgroundColor = "#f2f6fb";
+        document.getElementById("mEn").style.color = "#f2f6fb";
+        document.getElementById("mEn").style.fontWeight = "800";
+        document.getElementById("mEn").style.backgroundColor = "#13519c";};
 
   function KrMode(){document.getElementById("En").style.fontWeight = "200";
         document.getElementById("En").style.color = "#13519c";
         document.getElementById("En").style.backgroundColor = "#f2f6fb";
         document.getElementById("Kr").style.color = "#f2f6fb";
         document.getElementById("Kr").style.fontWeight = "800";
-        document.getElementById("Kr").style.backgroundColor = "#13519c";};
+        document.getElementById("Kr").style.backgroundColor = "#13519c";
+        document.getElementById("mEn").style.fontWeight = "200";
+        document.getElementById("mEn").style.color = "#13519c";
+        document.getElementById("mEn").style.backgroundColor = "#f2f6fb";
+        document.getElementById("mKr").style.color = "#f2f6fb";
+        document.getElementById("mKr").style.fontWeight = "800";
+        document.getElementById("mKr").style.backgroundColor = "#13519c";};
 
   window.onload = LanguageToggle();
   function LanguageToggle(){
