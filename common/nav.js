@@ -114,13 +114,13 @@ document.addEventListener("DOMContentLoaded", function () {
             if (document.querySelector(".menuWrap").classList.contains("on")) {
               //메뉴 slideOut
               document.querySelector(".menuWrap").classList.remove("on");
-              document.getElementById("menuBtn").src = "icon_mnav1.svg";
+              document.getElementById("menuBtn").src = "./icon_mnav1.svg";
               document.querySelector("#menuBtn").classList.remove("btnRotate");
               document.querySelector("#dimmed").remove();
             } else {
               //메뉴 slideIn
               document.querySelector(".menuWrap").classList.add("on");
-              document.getElementById("menuBtn").src = "icon_mnav2.svg";
+              document.getElementById("menuBtn").src = "./icon_mnav2.svg";
               document.querySelector("#menuBtn").classList.add("btnRotate");
               let div = document.createElement("div");
                          div.id = "dimmed";
