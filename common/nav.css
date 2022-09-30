@@ -51,7 +51,7 @@
     img{width: 100%;}
     #nav{display: none;}
  	#m_nav {
-        padding: 10px 0 0 0;
+        padding: 10px 10px 10px 0;
         display: block;
         position: fixed;
         top: 0;
@@ -80,8 +80,8 @@
     }
     #navBox a{
         display: block;
-        font-size: 35px;
-        line-height: 50px;}
+        font-size: 30px;
+        line-height: 45px;}
 
     #dimmed{
         position: fixed;
