@@ -1,4 +1,4 @@
-   (function(){
+(function(){
 
         var doc = document.documentElement;
         var w = window;
@@ -53,7 +53,7 @@
 })();
    
 
-      (function(){
+(function(){
 
         var doc = document.documentElement;
         var w = window;
@@ -107,19 +107,36 @@
 
 })();
 
+document.addEventListener("DOMContentLoaded", function () {
+        document
+          .querySelector("#menuBtn")
+          .addEventListener("click", function (e) {
+            if (document.querySelector(".menuWrap").classList.contains("on")) {
+              //메뉴 slideOut
+              document.querySelector(".menuWrap").classList.remove("on");
+              document.getElementById("menuBtn").src = "icon_mnav1.svg";
+              document.querySelector("#menuBtn").classList.remove("btnRotate");
+              document.querySelector("#dimmed").remove();
+            } else {
+              //메뉴 slideIn
+              document.querySelector(".menuWrap").classList.add("on");
+              document.getElementById("menuBtn").src = "icon_mnav2.svg";
+              document.querySelector("#menuBtn").classList.add("btnRotate");
+              let div = document.createElement("div");
+                         div.id = "dimmed";
+                         document.body.append(div);
 
-
-var coll = document.getElementsByClassName("m_nav");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
+                        //페이지 스크롤 락  모바일 이벤트 차단
+                        document
+                         .querySelector("#dimmed")
+                         .addEventListener(
+                              "scroll touchmove touchend mousewheel",
+                              function (e) {
+                                      e.preventDefault();
+                                      e.stopPropagation();
+                                      return false;
+                            }
+                            );
+                       }
+                     });
+        });
