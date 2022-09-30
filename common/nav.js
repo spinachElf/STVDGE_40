@@ -122,6 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
               document.querySelector(".menuWrap").classList.add("on");
               document.getElementById("menuBtn").src = "./common/icon_mnav2.svg";
               document.querySelector("#menuBtn").classList.add("btnRotate");
+
               let div = document.createElement("div");
                          div.id = "dimmed";
                          document.body.append(div);
@@ -137,6 +138,18 @@ document.addEventListener("DOMContentLoaded", function () {
                                       return false;
                             }
                             );
+                         function scrollDisable(){
+    $('body').addClass('scrollDisable').on('scroll touchmove mousewheel', function(e){
+        e.preventDefault();
+    });
+}
+function scrollAble(){
+    $('body').removeClass('scrollDisable').off('scroll touchmove mousewheel');
+}
+
+
                        }
                      });
         });
+
+
