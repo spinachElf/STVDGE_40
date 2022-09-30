@@ -34,17 +34,18 @@
 
                 #right{z-index: -1;
                     display: flex;
-                    order:1; 
+                    order:0; 
                     padding-top:28vh; 
                     padding-bottom: 6vh;
                     align-items: center;
                     }
                         #right img{width:100%;}
-
+                        #right .empty {order:0;}
+                        #right .flex_5{order:1;}
                 #left{padding-top:28vh; 
                     display: flex; 
                     
-                    order:0;}
+                    order:1;}
                     
                         .toggle{order:2; margin-bottom: 3vh;}
                         .toggle p {padding:1vh 1vw; border-radius: 20%;}
@@ -62,7 +63,7 @@
                                 
                                 
                         .empty{order:0; display:block; opacity: 0;}
-                        .text{order:1; text-align:justify}
+                        .text{order:1;}
                                 .Kr{font-size:calc(12px + 0.4rem); line-height: 1.8; word-break: keep-all;}
                                 .Kr p{margin-bottom:2vh;}
                                 .En{display: none; font-size:calc(12px + 0.4rem); line-height: 1.8; word-break: keep-all;}
