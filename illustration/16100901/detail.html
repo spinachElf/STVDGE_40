@@ -43,16 +43,16 @@
                 #left{padding-top:25vh; 
                     display: flex; 
                     order:1;}
-                        .toggle{order:2;position: absolute;
-    top: 185vh;
-    left: 58%;}
-                        .container{width:4vw; height:4vw;}
+                        .toggle{order:2; margin-bottom: 3vh;}
+                        .toggle p {padding:1vh 1vw; border-radius: 20%;}
+                        
                                 label{ cursor: pointer;}
                                 label:hover .toggleBtn{fill:#305c9b;}
                                 label:hover #Ltoggle{color:#f2f6fb;}
-
+                                input:checked #Kr{color: black;}
                                 .toggleBtn{fill:#f2f6fb;stroke:#305c9b;stroke-linecap:round;stroke-linejoin:round;stroke-width:4px;}
                                 #Ltoggle{color:#305c9b; position: relative; top: -50%; transform: translateY(-70%); text-align: center; font-size: calc(15px + 0.5rem); font-weight:100;}
+                                
 
                                 
                                 
@@ -176,15 +176,7 @@
       </div>
     
     <div id="Project">  
-    <div class="toggle">
-                        <div class="container">
-                            <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
-                            <label for="languageToggle" class="Ltoggle">
-                                <img src="../.././common/KrToEn.svg" id="imgId">
-                           </label>
-                    
-                        </div>
-                  </div>  
+    
       <section class="main">
         
           <div id="right"  class="flex_1">
@@ -204,6 +196,15 @@
               <div class="empty flex_1"></div>
 
               <div class="text flex_4">
+                                <div class="toggle">
+                        <div class="container">
+                            <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
+                            <label for="languageToggle" class="Ltoggle" style="display: flex;">
+                                <p id="Kr">한글</p><p id="En">En</p>
+                           </label>
+                    
+                        </div>
+                  </div>    
                   <div class="Kr">
                       <!--한글 작품 설명을 입력해 주세요.-->
                       <p>
@@ -221,8 +222,11 @@
                       <!--영어 이름과 대표 sns 주소를 입력해 주세요.-->
                       <p>Kim Nayun <a href="">a5555555@gmail.com</a></p>
                   </div>
-                  
+  
               </div>
+
+
+
               <div class="empty flex_1" style="order:4;"></div>
       </section>
           
@@ -311,6 +315,7 @@
 <script src="../.././common/font.js"></script>
 <script src="../.././common/footer.js"></script>
 <script type="text/javascript">
+  window.onload = LanguageToggle();
   function LanguageToggle(){
   var Toggle = document.getElementById("languageToggle");
   var Kr = document.getElementsByClassName("Kr");
@@ -322,11 +327,21 @@
       if (Toggle.checked == true) {
         Kr[i].style.display = "none";
         En[i].style.display = "block";
-        document.getElementById("imgId").src = "../.././common/EnToKr.svg";
+        document.getElementById("Kr").style.fontWeight = "200";
+        document.getElementById("Kr").style.color = "#13519c";
+        document.getElementById("Kr").style.backgroundColor = "#f2f6fb";
+        document.getElementById("En").style.color = "#f2f6fb";
+        document.getElementById("En").style.fontWeight = "800";
+        document.getElementById("En").style.backgroundColor = "#13519c";
       } else {
         Kr[i].style.display = "block";
         En[i].style.display = "none";
-        document.getElementById("imgId").src = "../.././common/KrToEn.svg";
+        document.getElementById("En").style.fontWeight = "200";
+        document.getElementById("En").style.color = "#13519c";
+        document.getElementById("En").style.backgroundColor = "#f2f6fb";
+        document.getElementById("Kr").style.color = "#f2f6fb";
+        document.getElementById("Kr").style.fontWeight = "800";
+        document.getElementById("Kr").style.backgroundColor = "#13519c";
       };
     };
   } else {
