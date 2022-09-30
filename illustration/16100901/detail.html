@@ -28,7 +28,7 @@
             /**맨 위 파트*/
             .fullImg {width:100%; height:100vh; overflow : hidden; display: flex; align-items: center;
               background: url(main.jpg); background-attachment: fixed; background-size: 100% auto;}
-            .main{height: 100vh; 
+            .main{min-height: 100vh; 
                  
                 display: flex;}
 
@@ -36,8 +36,8 @@
                     display: flex;
                     order:0; 
                     padding-top:25vh; 
-                    
-                    margin-right:-1vw;}
+                    padding-bottom: 6vh;
+                    }
                         #right img{width:100%;}
 
                 #left{padding-top:25vh; 
@@ -177,8 +177,8 @@
       <section class="main">
         
           <div id="right"  class="flex_1">
-              <div class="flex_2"></div>
-              <div class="flex_4">
+              <div class="flex_1"></div>
+              <div class="flex_5">
               <!-- 아래의 큰따옴표 안에 썸네일 파일 이름을 입력해 주세요. 학번.jpg 입니다. (예:17100808.jpg)-->
                   <img src="thumb.jpg">
               </div>
@@ -240,17 +240,17 @@
           <div class="track flex_2">
               <img src="../.././common/sparkle.svg">
               <!--트랙 이름이 옳은지 확인해 주세요.-->
-              <p>영상디자인 Motion Design</p>
+              <p class="Kr mKr">영상디자인</p>
+              <p class="En mEn">Motion Design</p>
+          </div>
+          
+          <div class="flex_2">
+              <!--한글 이름을 입력해 주세요.-->
+              <p class="name_Kr flex_1 Kr mKr">김나윤</p>
+              <!--영어 이름을 입력해 주세요.-->
+              <p class="name_En flex_1 En mEn">Kim Nayun</p>
           </div>
           <div class="empty flex_1"><p>.</p></div>
-          <div class="name_Kr flex_1 mKr">
-              <!--한글 이름을 입력해 주세요.-->
-              <p>김나윤</p>
-          </div>
-          <div class="name_En flex_1 mEn">
-              <!--영어 이름을 입력해 주세요.-->
-              <p>Kim Nayun</p>
-          </div>
           <div class="empty flex_1"><p>.</p></div>
           <div class="sns flex_3">
               <!--SNS 링크와 이름을 입력해 주세요.-->
