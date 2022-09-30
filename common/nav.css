@@ -55,10 +55,10 @@
         display: block;
         position: fixed;
         top: 0;
-        width: 100%;
+        width: 100vw;
         height: 100px;
         transition:all 0.3s ease;
-        }
+        padding:0px 10px;}
     #m_nav.hide{top: -100px;}
     header{
         display: flex;
