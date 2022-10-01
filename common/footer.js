@@ -1,15 +1,14 @@
-  var mybutton = document.getElementById("topBtn");
+var scrollToTopBtn = document.getElementById("topBtn");
+var rootElement = document.documentElement;
 
+function scrollToTop() {
+  // Scroll to top logic
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+};
 
-
-function topFunction() {if (x.matches){
-		window.scrollTo({top:0, behavior:'smooth'});
-	} else {
-		document.body.scrollTop = 0;
-		document.documentElement.scrollTop = 0;}
-}
-	 
-var x = window.matchMedia("(min-width: 700px)");
 
 const img = document.querySelector('img')
 img.ondragstart = () => {
