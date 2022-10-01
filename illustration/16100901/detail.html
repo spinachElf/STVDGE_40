@@ -12,148 +12,12 @@
     <link rel="stylesheet" type="text/css" href="../.././common/mouse.css">
     <link rel="stylesheet" type="text/css" href="../.././common/detailnav.css">
     <link rel="stylesheet" type="text/css" href="../.././common/common.css">
-    <link rel="stylesheet" type="text/css" href="../.././common/footer.css">
+    <link rel="stylesheet" type="text/css" href="../.././common/footer.css"><link rel="stylesheet" type="text/css" href="../.././common/detail.css">
     <style type="text/css">
-        @media only screen and (min-width: 767px) {
-            /**좌우 여백 마진*/
-            html{overflow-x: hidden;}
-            section{padding:0 1vw;}
-            
-            nav {margin:0 1vw;}
-
-            p{color:#13519c;}
-            a:hover{color:#ef8b9e;}
-            input{display: none;}
-
-            /**맨 위 파트*/
-            #fullImg {width:100%; height:100vh; overflow : hidden; display: flex; align-items: center;
+       @media only screen and (min-width: 767px) {
+       #fullImg {width:100%; height:100vh; overflow : hidden; display: flex; align-items: center;
               background: url(main.jpg); background-attachment: fixed; background-size: 100% auto;}
-            #fullImg2{display: none;}
-            .main{
-                 min-height: 100vh;
-                display: flex;
-                padding-top:28vh;
-              padding-bottom: 6vh;}
-
-                #right{
-                    display: flex;
-                    order:0; 
-                    align-items: center;
-                    }
-                        #right img{width:100%;}
-                        #right .empty {order:0;}
-                        #right .flex_5{order:1;}
-                #left{display: flex; 
-                    order:1;}
-                    
-                        .togglePC{order:2; margin-bottom: 3vh;}
-                        .togglePC p {padding:1vh 1vw; border-radius: 20%;}
-                        .toggleM{display: none;}
-                        
-                                
-                        .empty{order:0; display:block; opacity: 0;}
-                        .text{order:1;}
-                                .Kr{font-size:calc(12px + 0.4rem); line-height: 1.8; word-break: keep-all;}
-                                .Kr p{margin-bottom:2vh;}
-                                .En{display: none; font-size:calc(12px + 0.4rem); line-height: 1.8; word-break: keep-all;}
-                                .En p{margin-bottom:2vh;}
-
-            .details {background-color: black;}
-            .details img{width:100%;}
-                    .videoWrap {position: relative;
-                          padding-bottom: 56.25%;
-                          /* 16:9 */
-                          padding-top: 25px;
-                          height: 0;}
-                    .videoWrap iframe {position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;}
-
-
-            .info {
-                min-height:6vh;
-                height:auto;
-                position: sticky;
-                position: -webkit-sticky;
-                width:100%;
-                padding: 0 1vw;
-                display: flex;
-                background-color: #f2f6fb;
-                bottom:0;
-                border-top:solid #13519c 2px;
-                z-index:10;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 1em;
-                color:#13519c;
-              }
-                    .info img{width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
-                    .track{display: flex; align-items: center;}
-                    .empty2{display: none;}
-
-        }
-    @media only screen and (max-width: 767px) {
-      html{overflow-x: hidden;}
-      section{padding:0 5vw;}
-            
-      nav {margin:0 5vw;}
-
-      p{color:#13519c;}
-      input{display: none;}
-      #fullImg {display: none;}
-      #fullImg {display: block;}
-      .main{min-height: 100vh;padding-top:15vh; padding-bottom: 6vh;}
-          #right{order:0; 
-             padding-bottom: 3vh;}
-              #right img{width:100%;}
-              .empty {display: none;}
-          #left{}
-              .togglePC{display: none;}
-              .toggleM{position: absolute; bottom:7vh; right:5vw; width:15vw; border-radius:3vw; z-index: 5;}
-                        .Ltoggle{justify-content: flex-end;}
-                        .toggleM p{padding:2vw 2vw; border-radius: 20%;}
-              .text{order:1;}
-                        .Kr{font-size:16px; line-height: 1.6; word-break: keep-all;}
-                        .Kr p{margin-bottom:2vh;}
-                        .En{font-size:16px; line-height: 1.6; word-break: keep-all;}
-                        .En p{margin-bottom:2vh;}
-                        .details img{width:100%;}
-              .videoWrap {position: relative;
-                          padding-bottom: 56.25%;
-                          /* 16:9 */
-                          padding-top: 25px;
-                          height: 0;}
-              .videoWrap iframe {position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;}
-
-      #Project{height: 100vh;}
-              .info {height:6vh;
-                width:100%;
-                padding: 0 5vw;
-                display: flex;
-                background-color: #f2f6fb;
-                border-top:solid #13519c 2px;
-                z-index:10;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 1em;
-                color:#13519c;}
-              .sns1{text-align: right;}
-              .sns2{display: none;}
-
-               
-                    .track{display:none;}
-                    .empty2{display: none;}
-        #imgId {filter: drop-shadow(6px 6px #2a99d7);}
-
-                        
-    }
-
+            }
 
     </style>
 </head>
@@ -212,24 +76,26 @@
 
 
     <nav id="nav"> 
-      <!-- 이곳에 제목을 입력해 주세요. 한 줄짜리 제목인 경우 <br> ~ 이렇습니다, <br> ~ here 부분은 지워 주세요.-->
-      <a href="main.html" class="nav_title flex_8"><p class="mKr">제목을 입력하세요<br>두 줄인 경우 여기에 입력해주세요.</p><span class="mEn">This is for English title.<br>Second row here</span></a></div>
+      <!-- 이곳에 제목을 입력해 주세요.-->
+      <a href="../.././index.html" class="nav_title flex_8"><p class="mKr">✥제목을 입력하세요</p><span class="mEn">✥This is for English title.</span></a></div>
+
+
+
       <div class="flex_1"></div>
-      <div class="nav_menu flex_3">
-        <a href="../.././project.html" class="flex_1">프로젝트<span>Project</span></a>
-        <a href="../.././profile.html" class="flex_1">프로필<span>Profile</span></a>
-        <a href="../.././guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+        <div class="nav_menu flex_3">
+          <a href="../.././project.html" class="flex_1">프로젝트<span>Project</span></a>
+          <a href="../.././profile.html" class="flex_1">프로필<span>Profile</span></a>
+          <a href="../.././guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
         </div>
-  </nav>
+      </nav>
   <nav id="m_nav"></nav>
 
+
+
     <div id="fullImg" class="fullImg"></div>
-    
     <div id="Project">  
       <section class="main">
-        
-          <div id="right"  class="flex_1">
-              
+                  <div id="right"  class="flex_1">
               <div class="flex_5">
               <!-- 아래의 큰따옴표 안에 썸네일 파일 이름을 입력해 주세요. 학번.jpg 입니다. (예:17100808.jpg)-->
                   <img src="thumb.jpg">
@@ -240,10 +106,9 @@
 
 
 
-          <div id="left" class="flex_1">
-               
-              <div class="empty flex_1"></div>
 
+          <div id="left" class="flex_1">
+              <div class="empty flex_1"></div>
               <div class="text flex_4">
                   <div class="togglePC">
                         <div class="container">
@@ -251,56 +116,63 @@
                             <label for="languageToggle" class="Ltoggle" style="display: flex;">
                                 <p id="Kr">한글</p><p id="En">En</p>
                            </label>
-                    
                         </div>
-                  </div>    
+                  </div>
+
+
+
+
                   <div class="Kr">
                       <!--한글 작품 설명을 입력해 주세요.-->
                       <p>
-                          《장-미셸 오토니엘: 정원과 정원》은 ‘유리구슬 조각’으로 잘 알려진 프랑스의 대표적인 현대미술가 장-미셸 오토니엘의 개인전으로 작가가 최근 10여 년 동안 발전시킨 회화, 조각, 설치작품 70여 점을 선보입니다. 오토니엘은 1980년대 후반부터 개인적 경험을 바탕으로 다양한 문화권의 관습, 신화적 상상력 등을 엮어 작가만의 섬세한 아름다움이 돋보이는 작품을 선보여 왔으며, 미술관 밖의 공간에서 대중의 삶과 자연, 역사와 건축과의 만남을 시도해왔습니다. 이번 전시 《장-미셸 오토니엘: 정원과 정원》은 오토니엘의 이러한 공공 야외 설치작업의 연장선상에서 서울시립미술관과 야외조각공원, 그리고 덕수궁에서 전개됨으로써 다양한 공간과 대중에 접근합니다.
+                          한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명
                       </p>
 
                       <!--한글 이름과 대표 sns 주소를 입력해 주세요.-->
-                      <p>김나윤 <a href="">a5555555@gmail.com</a></p>
+                      <p>✥이름✥<a href="SNS 링크를 붙여넣어 주세요">👀SNS1</a></p>
                   </div>
                   <div class="En">
                       <!--영어 작품 설명을 입력해 주세요.-->
                       <p>
-                          Jean-Michel Autoniel: Garden and Garden is an individual exhibition by Jean-Michel Autoniel, a leading French contemporary artist known for his glass bead sculptures, showcasing about 70 paintings, sculptures and installations that the artist has developed over the past decade. Since the late 1980s, Autoniel has been presenting works that show the artist's delicate beauty by weaving customs and mythological imaginations from various cultures based on personal experience, and has attempted to meet with public life, nature, history and architecture outside the museum. The exhibition "Jang-Michel Autoniel: Gardens and Gardens" is an extension of Otoniel's public outdoor installation work, and is held at the Seoul Museum of Art, Outdoor Sculpture Park, and Deoksugung Palace to access various spaces and the public.
+                          Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here.Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here.Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here.Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here.Work explanation here.
                       </p>
                       <!--영어 이름과 대표 sns 주소를 입력해 주세요.-->
-                      <p>Kim Nayun <a href="">a5555555@gmail.com</a></p>
+                      <p>✥Name✥<a href="Copy&Paste Your SNS link Here">👀SNS1</a></p>
                   </div>
-                 
               </div>
-
-
-
               <div class="empty flex_1" style="order:4;"></div>
       </section>
     
       
+
           
       <div id="details" class="details">
           <!--큰따옴표 안에 이미지 파일 이름을 순서대로 적어 주세요.-->
-          <img src="main.jpg" id="fullImg2">
-          <img src="./1.jpg">
-          <img src="./2.jpg">
-          <img src="./3.jpg">
           <div class="videoWrap">
-              <!--영상의 경우 여기 아래에 <퍼가기>링크를 붙여넣어 주세요.-->
-              <iframe width="560" height="349" src="https://www.youtube.com/embed/bQ06C9zC7jM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <!--영상의 경우 여기 아래에 Youtube<퍼가기>링크를 붙여넣어 주세요.-->
+  
           </div>
+          <img src="main.jpg" id="fullImg2">
+          <img src="1.jpg">
+          <img src="2.jpg">
+          <img src="3.jpg">
       </div>
-         <div class="toggleM">
+
+
+
+
+
+      <div class="toggleM">
                         <div class="container">
                             <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
                             <label for="languageToggle" class="Ltoggle">
                                 <img src="../.././common/KrToEn.svg" id="imgId">
                            </label>
-                    
                         </div>
-          </div>
+      </div>
+
+
+
 
 
       <div id="info" class="info">
@@ -308,25 +180,26 @@
               <img src="../.././common/sparkle.svg">
               <!--트랙 이름이 옳은지 확인해 주세요.-->
               <p class="Kr mKr">영상디자인</p>
-              <p class="En mEn">Motion Design</p>
+              <p class="En mEn">Video Design</p>
           </div>
           
           <div class="flex_2">
               <!--한글 이름을 입력해 주세요.-->
-              <p class="name_Kr flex_1 Kr mKr">김나윤</p>
+              <p class="name_Kr flex_1 Kr mKr">✥이름✥</p>
               <!--영어 이름을 입력해 주세요.-->
-              <p class="name_En flex_1 En mEn">Kim Nayun</p>
+              <p class="name_En flex_1 En mEn">✥Name✥</p>
           </div>
-          <div class="empty flex_1"><p>.</p></div>
-          <div class="empty flex_1"><p>.</p></div>
-          <div class="sns1 flex_3">
+          <div class="empty flex_3"><p>.</p></div>
+          
+          <div class="sns1 flex_2">
               <!--SNS 링크와 이름을 입력해 주세요.-->
-              <a href="">a01098843271@gmail.com</a>
+              <a href="SNS 링크를 붙여넣어 주세요">👀SNS1</a>
           </div>
-          <div class="sns2 flex_3">
-              <!--SNS 링크와 이름을 입력해 주세요. 없다면 하트를 지워 주세요.-->
-              <a href="">a01098843271@gmail.com</a>
+          <div class="sns2 flex_2">
+              <!--SNS 링크와 이름을 입력해 주세요. SNS링크가 하나인 경우 아래의 <a>~</a>를 지워 주세요.-->
+              <a href="SNS 링크를 붙여넣어 주세요">👀SNS2</a>
           </div>
+          <div class="empty flex_1"><p>.</p></div>
       </div>
     
     
@@ -336,13 +209,13 @@
     <footer>
       <img src="../.././common/footer_Left.svg" class="footer_Left">
       <img src="../.././common/footer_Right.svg" class="footer_Right">
-      <div id="topBtn" class="undragable flex"style="z-index: 3;">
+      <div id="topBtn" class="undragable flex">
         <div class="topBtn" onclick="topFunction()" >
           <img src="../.././common/ToTop.svg" class="footerIcon">
           <p>맨 위로 To top</p>
       </div>
       <!--href="여기에 ../.././다른 트랙명/학번/detail.html"을 적어 주세요.-->
-      <div href="../.././트랙명/학번/detail.html" class="thumbLink topBtn">
+      <div href="이 과목 외의 *../.././트랙명/학번/detail.html* 을 입력하세요" class="thumbLink topBtn">
         <img src="../.././common/ToTop.svg" class="footerIcon">
         <p>다른 작품 보기</p>
       </div>
@@ -388,7 +261,8 @@
         document.getElementById("mEn").style.backgroundColor = "#f2f6fb";
         document.getElementById("mKr").style.color = "#f2f6fb";
         document.getElementById("mKr").style.fontWeight = "800";
-        document.getElementById("mKr").style.backgroundColor = "#13519c";};      
+        document.getElementById("mKr").style.backgroundColor = "#13519c";}; 
+
   function EnMode() {document.getElementById("Kr").style.fontWeight = "200";
         document.getElementById("Kr").style.color = "#13519c";
         document.getElementById("Kr").style.backgroundColor = "#f2f6fb";
