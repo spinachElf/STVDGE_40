@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
             if (document.querySelector(".menuWrap").classList.contains("on")) {
               //메뉴 slideOut
               document.querySelector(".menuWrap").classList.remove("on");
-              document.getElementById("menuBtn").src = "./common/icon_mnav1.svg";
+              document.getElementById("menuBtn").src = "./common/icon_mnav1.svg";        
               document.querySelector("#menuBtn").classList.remove("btnRotate");
               document.querySelector("#body").classList.remove("scrollLock");
               document.querySelector("#dimmed").remove();
@@ -134,3 +134,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
 
+(window.onload = function() {  // 화면이 뜬 뒤 처리
+
+  var obj1 = document.getElementById('navHead'); 
+  var obj1_height = obj1.offsetHeight;
+
+  document.getElementById('navBox').style.paddingTop = obj1_height + 30 + 'px'
+
+})();
