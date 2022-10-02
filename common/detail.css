@@ -1,139 +1,432 @@
- @media only screen and (min-width: 767px) {
-            /**좌우 여백 마진*/
-            html{overflow-x: hidden;}
-            section{padding:0 1vw;}
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <base target="_blank">
+
+    <link rel="stylesheet" type="text/css" href="../.././common/mouse.css">
+    <link rel="stylesheet" type="text/css" href="../.././common/nav.css">
+    <link rel="stylesheet" type="text/css" href="../.././common/common.css">
+    <link rel="stylesheet" type="text/css" href="../.././common/footer.css"><link rel="stylesheet" type="text/css" href="../.././common/detail.css">
+    <style type="text/css">
+       @media only screen and (min-width: 767px) {
+       #fullImg {width:100%; height:100vh; overflow : hidden; display: flex; align-items: center;
+              background: url(main.jpg); background-attachment: fixed; background-size: 100% auto;}
+          #index_title{display: none;}
+          #detail_title{display: block;}
+            }
+      @media only screen and (max-width: 767px) {
+          #index_title{display: none;}
+          #detail_title{display: block;}
+         .ToggleTitleKr{display:block;}
+          .ToggleTitleEn{display:none;}
+      }
+     
+    </style>
+</head>
+<body id="body">
+    <div id="customCursor1" class="cursor">
+
+      <svg id="cursor1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor2" class="cursor">
+
+      <svg id="cursor2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor3" class="cursor">
+
+      <svg id="cursor3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+    <div id="customCursor4" class="cursor">
+
+      <svg id="cursor4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor2_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor2_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor5" class="cursor">
+
+      <svg id="cursor5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor1_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor1_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+    <div id="customCursor6" class="cursor">
+
+      <svg id="cursor6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.61 84.61">
+      <path class="cursor3_Fill" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/>
+      <path class="cursor3_Stroke" d="M8.48,42.31c27.86,3.3,30.53,5.97,33.83,33.83,3.3-27.86,5.97-30.53,33.83-33.83-27.86-3.3-30.53-5.97-33.83-33.83-3.3,27.86-5.97,30.53-33.83,33.83Z"/></svg>
+
+    </div>
+
+
+<nav id="nav"> 
+      <a href="../.././index.html" class="nav_title flex_8">서울과학기술대학교 시각디자인전공<br>40th 졸업전시<span style="line-height: 70px; margin: 0;">Celeblossom</span></a>
+      <div class="flex_1"></div>
+      <div class="nav_menu flex_3">
+        <a href="../.././project.html" class="flex_1">프로젝트<span>Project</span></a>
+        <a href="../.././profile.html" class="flex_1">프로필<span>Profile</span></a>
+        <a href="../.././guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+        </div>
+</nav>
+
+<nav id="m_nav">
+    <header id="navHead">
+      <a href="index.html" id="index_title"><img src="../.././common/icon_40th.svg"></a>
+      <a href="index.html" id="detail_title">
+        <p id="ToggleTitleKr">제목 입력란 1줄<br>제목 입력란 2줄</p>
+        <span id="ToggleTitleEn">English title row 1<br>English title row 2</span></a>
+      <div id="menuBtn">
+        <img src="../.././common/icon_mnav1.svg" class="menuBtn"></img>
+      </div>
+    </header>
+    <div id="navBox" class="menuWrap">
+        <a href="../.././project.html" style="border-top: 1px solid #13519c; padding-top: 10px;" >프로젝트 Project</a>
+        <a href="../.././profile.html">프로필 Profile</a>
+        <a href="../.././guestbook.html">방명록 Blossom</a>
+    </div>
+
+</nav>
+
+
+
+    <div id="fullImg" class="fullImg"></div>
+    <div id="Project">  
+      <section class="main" id="main">
+                  <div id="right"  class="flex_1">
+              <div class="flex_5">
+              <!-- 아래의 큰따옴표 안에 썸네일 파일 이름을 입력해 주세요. 학번.jpg 입니다. (예:17100808.jpg)-->
+                  <img src="thumb.jpg">
+              </div>
+              <div class="flex_1"></div>
+          </div>
+          
+
+
+
+
+          <div id="left" class="flex_1">
+              <div class="empty flex_1"></div>
+              <div class="text flex_4">
+                  <div class="togglePC">
+                        <div class="container">
+                            <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
+                            <label for="languageToggle" class="Ltoggle" style="display: flex;">
+                                <p id="Kr">한글</p><p id="En">En</p>
+                           </label>
+                        </div>
+                  </div>
+
+
+
+
+                  <div class="Kr">
+                      <!--한글 작품 설명을 입력해 주세요.-->
+                      <p>
+                          한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명을 입력해 주세요.한글 작품 설명
+                      </p>
+
+                      <!--한글 이름과 대표 sns 주소를 입력해 주세요.-->
+                      <p>✥이름✥<a href="SNS 링크를 붙여넣어 주세요">👀SNS1</a></p>
+                  </div>
+                  <div class="En">
+                      <!--영어 작품 설명을 입력해 주세요.-->
+                      <p>
+                          Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here.Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here.Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here.Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here. Work explanation here.Work explanation here.
+                      </p>
+                      <!--영어 이름과 대표 sns 주소를 입력해 주세요.-->
+                      <p>✥Name✥<a href="Copy&Paste Your SNS link Here">👀SNS1</a></p>
+                  </div>
+              </div>
+              <div class="empty flex_1" style="order:4;"></div>
+      </section>
+    
+      
+
+          
+      <div id="details" class="details">
+          <!--큰따옴표 안에 이미지 파일 이름을 순서대로 적어 주세요.-->
+          <div class="videoWrap">
+              <!--영상의 경우 여기 아래에 Youtube<퍼가기>링크를 붙여넣어 주세요.-->
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/RswrwDDHAU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <img src="main.jpg" id="fullImg2">
+          <img src="1.jpg">
+          <img src="2.jpg">
+          <img src="3.jpg">
+      </div>
+
+
+
+
+
+      <div class="toggleM">
+                        <div class="container">
+                            <input type="checkbox" name="language" value="language" id="languageToggle" onclick="LanguageToggle()">
+                            <label for="languageToggle" class="Ltoggle">
+                                <img src="../.././common/KrToEn.svg" id="imgId">
+                           </label>
+                        </div>
+      </div>
+
+
+
+
+
+      <div id="info" class="info">
+          <div class="track flex_2">
+              <img src="../.././common/sparkle.svg">
+              <!--트랙 이름이 옳은지 확인해 주세요.-->
+              <p class="Kr mKr">영상디자인</p>
+              <p class="En mEn">Video Design</p>
+          </div>
+          
+          <div class="flex_2">
+              <!--한글 이름을 입력해 주세요.-->
+              <p class="name_Kr flex_1 Kr mKr">✥이름✥</p>
+              <!--영어 이름을 입력해 주세요.-->
+              <p class="name_En flex_1 En mEn">✥Name✥</p>
+          </div>
+          <div class="empty flex_3"><p>.</p></div>
+          
+          <div class="sns1 flex_2">
+              <!--SNS 링크와 이름을 입력해 주세요.-->
+              <a href="SNS 링크를 붙여넣어 주세요">👀SNS1</a>
+          </div>
+          <div class="sns2 flex_2">
+              <!--SNS 링크와 이름을 입력해 주세요. SNS링크가 하나인 경우 아래의 <a>~</a>를 지워 주세요.-->
+              <a href="SNS 링크를 붙여넣어 주세요">👀SNS2</a>
+          </div>
+          <div class="empty flex_1"><p>.</p></div>
+      </div>
+    
+    
+    
+    
+  <!-- 푸터 -->
+    <footer>
+      <img src="../.././common/footer_Left.svg" class="footer_Left">
+      <img src="../.././common/footer_Right.svg" class="footer_Right">
+      
+      <div>
+        <p class="footerKr">서울과학기술대학교</br>시각디자인학과 제40회 졸업전시</p>
+        <p class="footerEn">2022©Seoul National University of Science</br>and Technology. All Rights Reserved.</p>
+      </div>
+      <div class="flex">
+        
+          <a  class="link" href="https://vd.seoultech.ac.kr/" >
+            <img src="../.././common/seoultech.svg" class="seoultechIcon">
             
-           
-
-            p{color:#13519c;}
-            a:hover{color:#ef8b9e;}
-            input{display: none;}
-
-            /**맨 위 파트*/
+          </a>
+        
+          <a  class="link" href="https://www.instagram.com/snad_vd/">
+            <img src="../.././common/instagram.svg" class="instaIcon">
             
-            #fullImg2{display: none;}
-            .main{
-                 min-height: 100vh;
-                display: flex;
-                padding-top:28vh;
-              padding-bottom: 6vh;}
-
-                #right{
-                    display: flex;
-                    order:0; 
-                    }
-                        #right img{width:100%;}
-                        #right .empty {order:0;}
-                        #right .flex_5{order:1;}
-                #left{display: flex; 
-                    order:1;}
-                    
-                        .togglePC{order:2; margin-bottom: 3vh;}
-                        .togglePC p {padding:1vh 1vw; border-radius: 20%;}
-                        .toggleM{display: none;}
-                        
-                                
-                        .empty{order:0; display:block; opacity: 0;}
-                        .text{order:1;}
-                                .Kr{font-size:calc(12px + 0.4rem); line-height: 1.8; word-break: keep-all;}
-                                .Kr p{margin-bottom:2vh;}
-                                .En{display: none; font-size:calc(12px + 0.4rem); line-height: 1.8; word-break: keep-all;}
-                                .En p{margin-bottom:2vh;}
-
-            .details {background-color: black;}
-            .details img{width:100%;}
-                    .videoWrap {position: relative;
-                          padding-bottom: 56.25%;
-                          /* 16:9 */
-                          padding-top: 25px;
-                          height: 0;}
-                    .videoWrap iframe {position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;}
+          </a>
+        
+      </div>
+         
+    </footer>
 
 
-            .info {
-                min-height:6vh;
-                height:auto;
-                position: sticky;
-                position: -webkit-sticky;
-                width:100%;
-                padding: 0 1vw;
-                display: flex;
-                background-color: #f2f6fb;
-                bottom:0;
-                border-top:solid #13519c 2px;
-                z-index:10;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 1em;
-                color:#13519c;
-              }
-                    .info img{width:calc(12px + 1.5vw); height: auto; margin-right: 0.3vw;}
-                    .track{display: flex; align-items: center;}
-                    .empty2{display: none;}
 
 
-        }
+<script src="../.././common/detailnav.js"></script>
+<script src="../.././common/mouse.js"></script>
+<script src="../.././common/font.js"></script>
+<script src="../.././common/footer.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
+<script type="text/javascript">
+  function MEnMode(){document.getElementById("mKr").style.fontWeight = "200";
+        document.getElementById("mKr").style.color = "#13519c";
+        document.getElementById("mKr").style.backgroundColor = "#f2f6fb";
+        document.getElementById("mEn").style.color = "#f2f6fb";
+        document.getElementById("mEn").style.fontWeight = "800";
+        document.getElementById("mEn").style.backgroundColor = "#13519c";};
+
+  function MKrMode(){document.getElementById("mEn").style.fontWeight = "200";
+        document.getElementById("mEn").style.color = "#13519c";
+        document.getElementById("mEn").style.backgroundColor = "#f2f6fb";
+        document.getElementById("mKr").style.color = "#f2f6fb";
+        document.getElementById("mKr").style.fontWeight = "800";
+        document.getElementById("mKr").style.backgroundColor = "#13519c";}; 
+
+  function EnMode() {document.getElementById("Kr").style.fontWeight = "200";
+        document.getElementById("Kr").style.color = "#13519c";
+        document.getElementById("Kr").style.backgroundColor = "#f2f6fb";
+        document.getElementById("En").style.color = "#f2f6fb";
+        document.getElementById("En").style.fontWeight = "800";
+        document.getElementById("En").style.backgroundColor = "#13519c";
+        };
+
+  function KrMode(){document.getElementById("En").style.fontWeight = "200";
+        document.getElementById("En").style.color = "#13519c";
+        document.getElementById("En").style.backgroundColor = "#f2f6fb";
+        document.getElementById("Kr").style.color = "#f2f6fb";
+        document.getElementById("Kr").style.fontWeight = "800";
+        document.getElementById("Kr").style.backgroundColor = "#13519c";
+        };
+
+  window.onload = LanguageToggle();
+  function LanguageToggle(){
+    
+  var Toggle = document.getElementById("languageToggle");
+  var Kr = document.getElementsByClassName("Kr");
+  var mKr = document.getElementsByClassName("mKr");
+  var En = document.getElementsByClassName("En");
+  var mEn = document.getElementsByClassName("mEn");
+  var ToggleTitleKr = document.getElementById("ToggleTitleKr");
+   var ToggleTitleEn = document.getElementById("ToggleTitleEn");
+  
+    if (matchMedia("only screen and (min-width: 767px)").matches) {
+      for (var i=0;i<Kr.length;i+=1) {
+      if (Toggle.checked == true) {
+        Kr[i].style.display = "none";
+        En[i].style.display = "block";
+        EnMode();
+      } else {
+        Kr[i].style.display = "block";
+        En[i].style.display = "none";
+        KrMode();
+      };
+    };
+  } else {
+      for (var i=0;i<Kr.length;i+=1) {
+      if (Toggle.checked == true) {
+        ToggleTitleKr.style.display = "none";
+        ToggleTitleEn.style.display = "block";
+        Kr[i].style.display = "none";
+        mKr[i].style.display = "none";
+        En[i].style.display = "block";
+        mEn[i].style.display = "block";
+        document.getElementById("imgId").src = "../.././common/EnToKr.svg";
+        EnMode();
+      } else {
+        ToggleTitleKr.style.display = "block";
+        ToggleTitleEn.style.display = "none";
+        Kr[i].style.display = "block";
+        mKr[i].style.display = "block";
+        En[i].style.display = "none";
+        mEn[i].style.display = "none";
+        KrMode();
+        document.getElementById("imgId").src = "../.././common/KrToEn.svg";
+      };
+    };
+  };
+    
+
+    
+  };
+</script>
+<script type="text/javascript">
+
+var navContainer = document.getElementById('nav');
+var Height = window.innerHeight;
+var header = document.getElementById("nav");
 
 
-    @media only screen and (max-width: 767px) {
-      html{overflow-x: hidden;}
-      section{padding:0 5vw;}
-
-
-      p{color:#13519c;}
-      input{display: none;}
-      #fullImg {display: none;}
-      #fullImg2{display: block;}
-      .main{min-height: 100vh;padding-top:15vh; padding-bottom: 6vh;}
-          #right{order:0; 
-             padding-bottom: 2vh;}
-              #right img{width:100%;}
-              .empty {display: none;}
-          #left{}
-              .togglePC{display: none;}
-              .toggleM{position: fixed; bottom:7vh; right:5vw; width:15vw; border-radius:3vw; z-index: 5;}
-                        .Ltoggle{justify-content: flex-end;}
-                        .toggleM p{padding:2vw 2vw; border-radius: 20%;}
-              .text{order:1;}
-                        .Kr{font-size:16px; line-height: 1.6; word-break: keep-all;}
-                        .Kr p{margin-bottom:2vh;}
-                        .En{font-size:16px; line-height: 1.6; word-break: keep-all;}
-                        .En p{margin-bottom:2vh;}
-                        .details img{width:100%;}
-              .videoWrap {position: relative;
-                          padding-bottom: 56.25%;
-                          /* 16:9 */
-                          padding-top: 25px;
-                          height: 0;}
-              .videoWrap iframe {position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;}
-
-      #Project{}
-              .info {height:6vh;
-                width:100%;
-                padding: 0 5vw;
-                display: flex;
-                background-color: #f2f6fb;
-                border-top:solid #13519c 2px;
-                z-index:10;
-                justify-content: space-between;
-                align-items: center;
-                font-size: 1em;
-                color:#13519c;}
-              .sns1{text-align: right;}
-              .sns2{display: none;}
-
-               
-                    .track{display:none;}
-                    .empty2{display: none;}
-        #imgId {filter: drop-shadow(6px 6px #2a99d7);}
-
-                        
+var isVisible = false;
+$(window).on('scroll',function() {
+    if (checkVisible($('#fullImg'))&&!isVisible) {
+        header.classList.add("hide");
+        return;
     }
+    if (checkVisible($('#main'))&&!isVisible) {header.classList.remove("hide");
+        return; 
+
+    }
+    if (checkVisible($('#details'))&&!isVisible) {
+        (function () {
+  var doc = document.documentElement;
+  var w = window;
+
+  var prevScroll = w.scrollY || doc.scrollTop;
+  var curScroll;
+  var direction = "initial";
+  var prevDirection = "initial";
+
+  var header = document.getElementById("nav");
+
+  var checkScroll = function () {
+    /*
+     ** Find the direction of scroll
+     ** 0 - initial, 1 - up, 2 - down
+     ** 10/01 change :: 0 -> "initial", 1 -> "up", 2 -> "down"
+     */
+
+    curScroll = w.scrollY || doc.scrollTop;
+    if (curScroll > prevScroll) {
+      //scrolled up
+      direction = 2;
+    } else if (curScroll < prevScroll) {
+      //scrolled down
+      direction = 1;
+    }
+
+    if (direction !== prevDirection) {
+      toggleHeader(direction, curScroll);
+    }
+
+    prevScroll = curScroll;
+  };
+
+var toggleHeader = function(direction, curScroll) {
+    if (direction === 2 && curScroll > 52) { 
+      
+      //replace 52 with the height of your header in px
+
+      header.classList.add('hide');
+      prevDirection = direction;
+    }
+    else if (direction === 1) {
+      header.classList.remove('hide');
+      prevDirection = direction;
+    }
+  };
+  
+  window.addEventListener('scroll', checkScroll);
+
+})();} 
+});
+
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();   
+    
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
+
+
+</script>
+
+
+</body>
+</html>
