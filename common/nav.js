@@ -114,15 +114,15 @@ document.addEventListener("DOMContentLoaded", function () {
             if (document.querySelector(".menuWrap").classList.contains("on")) {
               //메뉴 slideOut
               document.querySelector(".menuWrap").classList.remove("on");
-              document.getElementById("menuBtn").src = "./common/icon_mnav1.svg";        
-              document.querySelector("#menuBtn").classList.remove("btnRotate");
+              document.querySelector(".menuBtn").src = "./common/icon_mnav1.svg";        
+              document.querySelector(".menuBtn").classList.remove("btnRotate");
               document.querySelector("#body").classList.remove("scrollLock");
               document.querySelector("#dimmed").remove();
             } else {
               //메뉴 slideIn
               document.querySelector(".menuWrap").classList.add("on");
-              document.getElementById("menuBtn").src = "./common/icon_mnav2.svg";
-              document.querySelector("#menuBtn").classList.add("btnRotate");
+              document.querySelector(".menuBtn").src = "./common/icon_mnav2.svg";
+              document.querySelector(".menuBtn").classList.add("btnRotate");
               document.querySelector("#body").classList.add("scrollLock")
               let div = document.createElement("div");
                          div.id = "dimmed";
