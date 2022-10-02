@@ -13,7 +13,7 @@
     color: #13519c;
     
     }
-  footer br{display: block;}
+  footer br{display:none !important;}
   .footerKr {font-size: calc(0.6vw + 12px); 
         color: #13519c; line-height: 160%; }
   .footerEn {font-size: calc(0.5vw + 10px); 
@@ -56,7 +56,7 @@
         margin-top:12vh;
         padding-bottom:8vh;
         color: #13519c;}
-      footer br{display:none !important;}
+      footer br{display:block;}
       footer div{margin-bottom:3vh;}
       footer > div:last-child {
         margin-bottom: 0;
