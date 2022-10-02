@@ -85,8 +85,8 @@
         margin:0 3vw; }
     #topBtn {align-items: center; justify-content: center;margin-bottom: 5vh;}
     .footerIcon{min-width: 28px; width:10vw; margin: auto; padding-bottom: 1vh;}
-      .instaIcon {min-width: 20px; width: 3vh; margin: auto;}
-    .seoultechIcon {min-width: 20px; width: 3.5vh; margin: auto;}
+      .instaIcon {min-width: 20px; width: 7vw; margin: auto;}
+    .seoultechIcon {min-width: 20px; width: 7.5vw; margin: auto;}
     .footer_Left{width:60%; position: absolute; left:0; bottom: 0;z-index: -1;}
     .footer_Right{width:60%; position: absolute; right:0; bottom: 0;z-index: -1;}
 }
