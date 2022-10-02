@@ -18,6 +18,8 @@
   	.main_section{display: flex; margin-top: 10vh;}
   	.label{}
   	.text{font-size: 1.2rem; line-height: 1.5;word-break: keep-all; letter-spacing: -0.4px;}
+  	#index_title{display: block;}
+  	#detail_title{display: none;}
 	</style>
 
 </head>
@@ -81,7 +83,7 @@
 
 
 	<nav id="nav"> 
-			<a href="index.html" class="nav_title flex_8">서울과학기술대학교 시각디자인전공<br>40th 졸업전시<span style="line-height: 70px; margin: 0;">Celeblossom</span></a></div>
+			<a href="index.html" class="nav_title flex_8">서울과학기술대학교 시각디자인전공<br>40th 졸업전시<span style="line-height: 70px; margin: 0;">Celeblossom</span></a>
 			<div class="flex_1"></div>
 			<div class="nav_menu flex_3">
 				<a href="project.html" class="flex_1">프로젝트<span>Project</span></a>
@@ -91,15 +93,19 @@
 	</nav>
 
 	<nav id="m_nav">
-		<header>
-			<a href="index.html"><img src="./common/icon_40th.svg"></a>
+		<header id="navHead">
+			<a href="index.html" id="index_title"><img src="./common/icon_40th.svg"></a>
+			<a href="index.html" id="detail_title">
+				<p class="mKr">제목 입력란 1줄<br>제목 입력란 2줄</p>
+				<span class="mEn">English title row 1<br>English title row 2</span></a>
 			<img id="menuBtn" src="./common/icon_mnav1.svg"></img>
 		</header>
 		<div id="navBox" class="menuWrap">
-				<a href="project.html">프로젝트 Project</a>
+				<a href="project.html" style="border-top: 1px solid #13519c; padding-top: 10px;" >프로젝트 Project</a>
 				<a href="profile.html">프로필 Profile</a>
 				<a href="guestbook.html">방명록 Blossom</a>
 		</div>
+
 	</nav>
 
 
