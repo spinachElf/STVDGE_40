@@ -261,6 +261,15 @@
 <script src="../.././common/footer.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
 <script type="text/javascript">
+  function NavUpload () {  // 화면이 뜬 뒤 처리
+
+  var obj1 = document.getElementById('navHead'); 
+  var obj1_height = obj1.offsetHeight;
+
+  document.getElementById('navBox').style.paddingTop = obj1_height + 30 + 'px'
+
+})();
+  
   function MEnMode(){document.getElementById("mKr").style.fontWeight = "200";
         document.getElementById("mKr").style.color = "#13519c";
         document.getElementById("mKr").style.backgroundColor = "#f2f6fb";
@@ -308,6 +317,7 @@
         Kr[i].style.display = "none";
         En[i].style.display = "block";
         EnMode();
+        
       } else {
         Kr[i].style.display = "block";
         En[i].style.display = "none";
@@ -325,6 +335,7 @@
         mEn[i].style.display = "block";
         document.getElementById("imgId").src = "../.././common/EnToKr.svg";
         EnMode();
+        NavUpload();
       } else {
         ToggleTitleKr.style.display = "block";
         ToggleTitleEn.style.display = "none";
@@ -332,6 +343,7 @@
         mKr[i].style.display = "block";
         En[i].style.display = "none";
         mEn[i].style.display = "none";
+        NavUpload();
         KrMode();
         document.getElementById("imgId").src = "../.././common/KrToEn.svg";
       };
