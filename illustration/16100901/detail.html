@@ -261,6 +261,19 @@
 <script src="../.././common/footer.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
 <script type="text/javascript">
+  window.onload = function TopUpload () {  // 화면이 뜬 뒤 처리
+
+  var obj1 = document.getElementById('navHead'); 
+  var obj1_height = obj1.offsetHeight;
+
+  document.getElementById('right').style.paddingTop = obj1_height + 70 + 'px'
+
+};
+
+
+
+
+
   function NavUpload () {  // 화면이 뜬 뒤 처리
 
   var obj1 = document.getElementById('navHead'); 
@@ -336,6 +349,7 @@
         document.getElementById("imgId").src = "../.././common/EnToKr.svg";
         EnMode();
         NavUpload();
+        TopUpload();
       } else {
         ToggleTitleKr.style.display = "block";
         ToggleTitleEn.style.display = "none";
@@ -344,6 +358,7 @@
         En[i].style.display = "none";
         mEn[i].style.display = "none";
         NavUpload();
+        TopUpload();
         KrMode();
         document.getElementById("imgId").src = "../.././common/KrToEn.svg";
       };
