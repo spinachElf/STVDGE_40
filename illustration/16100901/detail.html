@@ -19,8 +19,8 @@
        #fullImg {width:100%; height:100vh; overflow : hidden; display: flex; align-items: center;
               background: url(main.jpg); background-attachment: fixed; background-size: 100% auto;}
             }
-      overflow:scroll-y; 
-      -webkit-overflow-scrolling:touch;
+      #index_title{display: none;}
+      #detail_title{display: block;}
     </style>
 </head>
 <body>
@@ -77,20 +77,33 @@
     </div>
 
 
-    <nav id="nav" class="hide"> 
-      <!-- 이곳에 제목을 입력해 주세요.-->
-      <a href="../.././index.html" class="nav_title flex_8"><p class="mKr">✥제목을 입력하세요</p><span class="mEn">✥This is for English title.</span></a>
-
-
-
+<nav id="nav"> 
+      <a href="index.html" class="nav_title flex_8">서울과학기술대학교 시각디자인전공<br>40th 졸업전시<span style="line-height: 70px; margin: 0;">Celeblossom</span></a>
       <div class="flex_1"></div>
-        <div class="nav_menu flex_3">
-          <a href="../.././project.html" class="flex_1">프로젝트<span>Project</span></a>
-          <a href="../.././profile.html" class="flex_1">프로필<span>Profile</span></a>
-          <a href="../.././guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
+      <div class="nav_menu flex_3">
+        <a href="project.html" class="flex_1">프로젝트<span>Project</span></a>
+        <a href="profile.html" class="flex_1">프로필<span>Profile</span></a>
+        <a href="guestbook.html" class="flex_1">방명록<span>Blossom</span></a>
         </div>
-      </nav>
-  <nav id="m_nav"></nav>
+</nav>
+
+<nav id="m_nav">
+    <header id="navHead">
+      <a href="index.html" id="index_title"><img src="./common/icon_40th.svg"></a>
+      <a href="index.html" id="detail_title">
+        <p class="mKr">제목 입력란 1줄<br>제목 입력란 2줄</p>
+        <span class="mEn">English title row 1<br>English title row 2</span></a>
+      <div id="menuBtn">
+        <img src="./common/icon_mnav1.svg" class="menuBtn"></img>
+      </div>
+    </header>
+    <div id="navBox" class="menuWrap">
+        <a href="project.html" style="border-top: 1px solid #13519c; padding-top: 10px;" >프로젝트 Project</a>
+        <a href="profile.html">프로필 Profile</a>
+        <a href="guestbook.html">방명록 Blossom</a>
+    </div>
+
+</nav>
 
 
 
