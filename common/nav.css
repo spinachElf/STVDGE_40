@@ -62,21 +62,19 @@
     header{
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         z-index: 30;
     }
-    header a{
-        width: 250px;
-        z-index: 50;
+    header a{z-index: 50;
     }
-    header img{
-        width: 220px;
+    #index_title{width: 55vw;
     }
-    header p,span{
-        font-size: 30px; 
-    }
-    header p{font-family: sandoll-gothicneo2; line-height: 40px;}
-    header span{font-family: HV; line-height: 33px;}
-    #menuBtn{width: 50px; z-index: 100; cursor: pointer; transition: all 0.3s ease-in-out;}
+
+    header p{font-family: sandoll-gothicneo2; font-size: 1.9rem; line-height: 2.4rem;}
+    header span{font-family: HV; font-size: 2rem;line-height: 2.1rem;}
+    #menuBtn{width: 70px; height: 70px; z-index: 100; cursor: pointer; position: relative; margin: 10px;}
+    .menuBtn{position: absolute; width: 45px;top: 0; right: 0; transition: all 0.3s ease-in-out; }
+
 
     #navBox{
         background-color: #f2f6fb;
@@ -88,8 +86,9 @@
     }
     #navBox a{
         display: block;
-        font-size: 30px;
-        line-height: 45px;
+        font-size: 1.5rem;
+        line-height: 2.6rem;
+        font-family: HV;
     }
 
 
@@ -104,7 +103,7 @@
     }
     .menuWrap{
         position: fixed;
-        top: -400px;
+        top: -100vh;
         transition: all 0.3s ease-in-out;
     }
     .menuWrap.on{
