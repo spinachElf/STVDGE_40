@@ -24,7 +24,7 @@
       @media only screen and (max-width: 767px) {
           #index_title{display: none;}
           #detail_title{display: block;}
-          .ToggleTitleKr{display:block;}
+         .ToggleTitleKr{display:block;}
           .ToggleTitleEn{display:none;}
       }
      
@@ -98,15 +98,15 @@
     <header id="navHead">
       <a href="index.html" id="index_title"><img src="../.././common/icon_40th.svg"></a>
       <a href="index.html" id="detail_title">
-        <p class="ToggleTitleKr">제목 입력란 1줄<br>제목 입력란 2줄</p>
-        <span class="ToggleTitleEn">English title row 1<br>English title row 2</span></a>
+        <p id="ToggleTitleKr">제목 입력란 1줄<br>제목 입력란 2줄</p>
+        <span id="ToggleTitleEn">English title row 1<br>English title row 2</span></a>
       <div id="menuBtn">
         <img src="../.././common/icon_mnav1.svg" class="menuBtn"></img>
       </div>
     </header>
     <div id="navBox" class="menuWrap">
         <a href="../.././project.html" style="border-top: 1px solid #13519c; padding-top: 10px;" >프로젝트 Project</a>
-        <a href=../.././"profile.html">프로필 Profile</a>
+        <a href="../.././profile.html">프로필 Profile</a>
         <a href="../.././guestbook.html">방명록 Blossom</a>
     </div>
 
@@ -172,7 +172,7 @@
           <!--큰따옴표 안에 이미지 파일 이름을 순서대로 적어 주세요.-->
           <div class="videoWrap">
               <!--영상의 경우 여기 아래에 Youtube<퍼가기>링크를 붙여넣어 주세요.-->
-  
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/RswrwDDHAU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           <img src="main.jpg" id="fullImg2">
           <img src="1.jpg">
@@ -299,20 +299,16 @@
   var mKr = document.getElementsByClassName("mKr");
   var En = document.getElementsByClassName("En");
   var mEn = document.getElementsByClassName("mEn");
-  var ToggleTitleKr = document.getElementsByClassName("ToggleTitleKr");
-   var ToggleTitleEn = document.getElementsByClassName("ToggleTitleEn");
+  var ToggleTitleKr = document.getElementById("ToggleTitleKr");
+   var ToggleTitleEn = document.getElementById("ToggleTitleEn");
   
     if (matchMedia("only screen and (min-width: 767px)").matches) {
       for (var i=0;i<Kr.length;i+=1) {
       if (Toggle.checked == true) {
-        ToggleTitleKr[i].style.display = "none";
-        ToggleTitleEn[i].style.display = "block";
         Kr[i].style.display = "none";
         En[i].style.display = "block";
         EnMode();
       } else {
-        ToggleTitleKr[i].style.display = "block";
-        ToggleTitleEn[i].style.display = "none";
         Kr[i].style.display = "block";
         En[i].style.display = "none";
         KrMode();
@@ -321,6 +317,8 @@
   } else {
       for (var i=0;i<Kr.length;i+=1) {
       if (Toggle.checked == true) {
+        ToggleTitleKr.style.display = "none";
+        ToggleTitleEn.style.display = "block";
         Kr[i].style.display = "none";
         mKr[i].style.display = "none";
         En[i].style.display = "block";
@@ -328,6 +326,8 @@
         document.getElementById("imgId").src = "../.././common/EnToKr.svg";
         EnMode();
       } else {
+        ToggleTitleKr.style.display = "block";
+        ToggleTitleEn.style.display = "none";
         Kr[i].style.display = "block";
         mKr[i].style.display = "block";
         En[i].style.display = "none";
