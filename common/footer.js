@@ -1,4 +1,5 @@
-var scrollToTopBtn = document.getElementById("topBtn");
+
+var scrollToTopBtn = document.getElementById("topBtn02");
 var rootElement = document.documentElement;
 
 function scrollToTop() {
@@ -7,8 +8,7 @@ function scrollToTop() {
     top: 0,
     behavior: "smooth"
   });
-};
-
+}
 
 const img = document.querySelector('img')
 img.ondragstart = () => {
