@@ -21,7 +21,6 @@
                 #right{
                     display: flex;
                     order:0; 
-                    
                     }
                         #right img{width:100%;}
                         #right .empty {order:0;}
@@ -117,7 +116,7 @@
                         width: 100%;
                         height: 100%;}
 
-      #Project{height: 100vh;}
+      #Project{}
               .info {height:6vh;
                 width:100%;
                 padding: 0 5vw;
