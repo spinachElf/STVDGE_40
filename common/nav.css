@@ -57,7 +57,8 @@
         width: 100%;
         height: auto;
         transition:all 0.3s ease;
-        padding:10px;}
+        padding:10px;
+	z-index:50;}
     #m_nav.hide{top: -100vh;}
     header{
         display: flex;
