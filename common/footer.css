@@ -11,8 +11,8 @@
     margin-top: 15vh;
     padding-bottom: 10vh;
     color: #13519c;
-    
     }
+  footer br {display:block;)
   .footerKr {font-size: calc(0.6vw + 12px); 
         color: #13519c; line-height: 160%; }
   .footerEn {font-size: calc(0.5vw + 10px); 
@@ -77,6 +77,7 @@
         width: 20vw;
         margin: auto;
         justify-content: space-between;}
+      footer br {display:none;)
       .topBtn{position: relative; 
         font-size: 18px;
         line-height: 1.5;
@@ -90,5 +91,5 @@
     .seoultechIcon {min-width: 20px; width: 7.5vw; margin: auto;}
     .footer_Left{width:60%; position: absolute; left:0; bottom: 0;z-index: -1;}
     .footer_Right{width:60%; position: absolute; right:0; bottom: 0;z-index: -1;}
-    .br {display:block;}
+    
 }
