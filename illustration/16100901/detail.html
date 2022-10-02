@@ -320,6 +320,8 @@
     
   var Toggle = document.getElementById("languageToggle");
   var Kr = document.getElementsByClassName("Kr");
+  var NameKr = document.getElementsByClassName("name_Kr");
+  var NameEn = document.getElementsByClassName("name_En");
   var mKr = document.getElementsByClassName("mKr");
   var En = document.getElementsByClassName("En");
   var mEn = document.getElementsByClassName("mEn");
@@ -345,6 +347,8 @@
         ToggleTitleKr.style.display = "none";
         ToggleTitleEn.style.display = "block";
         Kr[i].style.display = "none";
+        NameKr[i].style.display = "none";
+        NameEn[i].style.display = "block";
         mKr[i].style.display = "none";
         En[i].style.display = "block";
         mEn[i].style.display = "block";
@@ -357,6 +361,8 @@
         ToggleTitleEn.style.display = "none";
         Kr[i].style.display = "block";
         mKr[i].style.display = "block";
+        NameKr[i].style.display = "block";
+        NameEn[i].style.display = "none";
         En[i].style.display = "none";
         mEn[i].style.display = "none";
         NavUpload();
