@@ -76,7 +76,7 @@
         margin: auto;
         justify-content: space-between;}
       .topBtn{position: relative; 
-        font-size:19px;  
+        font-size: 18px;
         line-height: 1.5;
         z-index: 3; 
         cursor: pointer; 
