@@ -82,8 +82,7 @@
     @media only screen and (max-width: 767px) {
       html{overflow-x: hidden;}
       section{padding:0 5vw;}
-            
-      nav {margin:0 5vw;}
+
 
       p{color:#13519c;}
       input{display: none;}
