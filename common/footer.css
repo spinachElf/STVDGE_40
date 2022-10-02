@@ -1,17 +1,19 @@
 /*웹*/ 
 @media only screen and (min-width: 767px) { 
-  .flex{display: flex; flex-wrap: wrap; align-items:flex-start; }
+  .flex{display: flex; flex-wrap: wrap; align-items:flex-start; 
+    }
   footer {height: auto;
     width:100%;
     margin-left:-1vw;
     align-items: center;
     position: relative;
     text-align: center;
-    margin-top: 15vh;
-    padding-bottom: 10vh;
+    margin-top:15vh;
+    padding-bottom:10vh;
     color: #13519c;
+    
     }
-  footer br {display:block;)
+  footer br{display: block;}
   .footerKr {font-size: calc(0.6vw + 12px); 
         color: #13519c; line-height: 160%; }
   .footerEn {font-size: calc(0.5vw + 10px); 
@@ -23,19 +25,6 @@
     width: 6vw;margin: auto;
     justify-content: space-between;
     }
-
-  .topBtn{position: relative; 
-    font-size: calc(0.7vw + 12px);  
-    line-height: 180%;
-    z-index: 3; 
-    cursor: pointer; 
-    height: 8vh;
-    margin-bottom: 8vh;
-    margin:0 3vw; 
-  }
-  .topBtn:hover {font-weight: bold;}
-  #topBtn {align-items: center; justify-content: center; margin-bottom: 10vh;}
-
   .footerIcon{min-width: 28px; width: 2.5vw; margin: auto;
     }
   .topBtn:hover > img{min-width: 30px; width: 2.7vw;}
@@ -53,40 +42,30 @@
       .footerKr {font-size:16px;
         color: #13519c; 
         line-height: 1.3; 
-        margin-bottom: 5px; 
+        margin-bottom:5px;
         word-break: keep-all;}
-      .footerEn {font-size:14px;
-        line-height:1.3;
+      .footerEn {font-size:14px; 
         color: #13519c; 
-        word-break: keep-all; }
+        line-height: 1.3; 
+        word-break: keep-all;}
       footer {height: auto;
-        
         align-items: center;
         position: relative;
         bottom: 0;
         text-align: center;
-        margin-top:10vh;
-        padding-bottom:5vh;
+        margin-top:12vh;
+        padding-bottom:8vh;
         color: #13519c;}
+      footer br{display:none !important;}
       footer div{margin-bottom:3vh;}
       footer > div:last-child {
         margin-bottom: 0;
         width: 20vw;
         margin: auto;
         justify-content: space-between;}
-      footer br{display:none;)
-      .topBtn{position: relative; 
-        font-size: 18px;
-        line-height: 1.5;
-        z-index: 3; 
-        cursor: pointer; 
-        height:12vh;
-        margin:0 3vw; }
-    #topBtn {align-items: center; justify-content: center;margin-bottom: 5vh;}
     .footerIcon{min-width: 28px; width:10vw; margin: auto; padding-bottom: 1vh;}
     .instaIcon {min-width: 20px; width: 7vw; margin: auto;}
-    .seoultechIcon {min-width: 20px; width: 7.5vw; margin: auto;}
+    .seoultechIcon {min-width: 20px; width: 7.5vw; margin: auto;}  
     .footer_Left{width:60%; position: absolute; left:0; bottom: 0;z-index: -1;}
     .footer_Right{width:60%; position: absolute; right:0; bottom: 0;z-index: -1;}
-    
 }
