@@ -96,7 +96,7 @@
               .empty {display: none;}
           #left{}
               .togglePC{display: none;}
-              .toggleM{position: absolute; bottom:7vh; right:5vw; width:15vw; border-radius:3vw; z-index: 5;}
+              .toggleM{position: fixed; bottom:7vh; right:5vw; width:15vw; border-radius:3vw; z-index: 5;}
                         .Ltoggle{justify-content: flex-end;}
                         .toggleM p{padding:2vw 2vw; border-radius: 20%;}
               .text{order:1;}
