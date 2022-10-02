@@ -91,7 +91,7 @@
       #fullImg2{display: block;}
       .main{min-height: 100vh;padding-top:15vh; padding-bottom: 6vh;}
           #right{order:0; 
-             padding-bottom: 3vh;}
+             padding-bottom: 2vh;}
               #right img{width:100%;}
               .empty {display: none;}
           #left{}
