@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8"  name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>seoultech_vd_40th_test</title>
-	
+	<link rel="icon" type="image/x-icon" href="./pav1.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
@@ -18,6 +18,7 @@
   	.main_section{display: flex; margin-top: 10vh;}
   	.label{}
   	.text{font-size: 1.2rem; line-height: 1.5;word-break: keep-all; letter-spacing: -0.4px;}
+  	/* 메인페이지 등에서는 index_title를 block, 개별 프로젝트 페이지에서는 detail_title을 block */
   	#index_title{display: block;}
   	#detail_title{display: none;}
 	</style>
@@ -98,7 +99,9 @@
 			<a href="index.html" id="detail_title">
 				<p class="mKr">제목 입력란 1줄<br>제목 입력란 2줄</p>
 				<span class="mEn">English title row 1<br>English title row 2</span></a>
-			<img id="menuBtn" src="./common/icon_mnav1.svg"></img>
+			<div id="menuBtn">
+				<img src="./common/icon_mnav1.svg" class="menuBtn"></img>
+			</div>
 		</header>
 		<div id="navBox" class="menuWrap">
 				<a href="project.html" style="border-top: 1px solid #13519c; padding-top: 10px;" >프로젝트 Project</a>
