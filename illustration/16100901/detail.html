@@ -173,11 +173,11 @@
 
           
       <div id="details" class="details">
-          <!--큰따옴표 안에 이미지 파일 이름을 순서대로 적어 주세요.-->
           <div class="videoWrap">
               <!--영상의 경우 여기 아래에 Youtube<퍼가기>링크를 붙여넣어 주세요.-->
 
           </div>
+          <!--큰따옴표 안에 이미지 파일 이름을 순서대로 적어 주세요.-->
           <img src="main.jpg" id="fullImg2">
           <img src="1.jpg">
           <img src="2.jpg">
@@ -211,9 +211,9 @@
           
           <div class="flex_2">
               <!--한글 이름을 입력해 주세요.-->
-              <p class="name_Kr flex_1 Kr mKr">✥이름✥</p>
+              <p class="name_Kr flex_1 Kr mKr"><a href="">✥이름✥</a></p>
               <!--영어 이름을 입력해 주세요.-->
-              <p class="name_En flex_1 En mEn">✥Name✥</p>
+              <p class="name_En flex_1 En mEn"><a href="">✥Name✥</a></p>
           </div>
           <div class="empty flex_3"><p>.</p></div>
           
@@ -400,41 +400,46 @@ $(window).on('scroll',function() {
 
     }
     if (checkVisible($('#details'))&&!isVisible) {
-        (function () {
-  var doc = document.documentElement;
-  var w = window;
 
-  var prevScroll = w.scrollY || doc.scrollTop;
-  var curScroll;
-  var direction = "initial";
-  var prevDirection = "initial";
 
-  var header = document.getElementById("nav");
 
-  var checkScroll = function () {
-    /*
-     ** Find the direction of scroll
-     ** 0 - initial, 1 - up, 2 - down
-     ** 10/01 change :: 0 -> "initial", 1 -> "up", 2 -> "down"
-     */
+(function(){
 
-    curScroll = w.scrollY || doc.scrollTop;
-    if (curScroll > prevScroll) {
-      //scrolled up
+        var doc = document.documentElement;
+        var w = window;
+
+        var prevScroll = w.scrollY || doc.scrollTop;
+        var curScroll;
+        var direction = 0;
+        var prevDirection = 0;
+
+        var header = document.getElementById('nav');
+
+        var checkScroll = function() {
+
+       /*
+       ** Find the direction of scroll
+       ** 0 - initial, 1 - up, 2 - down
+       */
+
+       curScroll = w.scrollY || doc.scrollTop;
+       if (curScroll > prevScroll) { 
+         //scrolled up
       direction = 2;
-    } else if (curScroll < prevScroll) {
+       }
+       else if (curScroll < prevScroll) { 
       //scrolled down
       direction = 1;
-    }
+       }
 
-    if (direction !== prevDirection) {
-      toggleHeader(direction, curScroll);
-    }
+       if (direction !== prevDirection) {
+         toggleHeader(direction, curScroll);
+       }
+    
+       prevScroll = curScroll;
+     };
 
-    prevScroll = curScroll;
-  };
-
-var toggleHeader = function(direction, curScroll) {
+     var toggleHeader = function(direction, curScroll) {
     if (direction === 2 && curScroll > 52) { 
       
       //replace 52 with the height of your header in px
@@ -450,7 +455,65 @@ var toggleHeader = function(direction, curScroll) {
   
   window.addEventListener('scroll', checkScroll);
 
-})();} 
+})();
+   
+
+(function(){
+
+        var doc = document.documentElement;
+        var w = window;
+
+        var prevScroll = w.scrollY || doc.scrollTop;
+        var curScroll;
+        var direction = 0;
+        var prevDirection = 0;
+
+        var header = document.getElementById('m_nav');
+
+        var checkScroll = function() {
+
+       /*
+       ** Find the direction of scroll
+       ** 0 - initial, 1 - up, 2 - down
+       */
+
+       curScroll = w.scrollY || doc.scrollTop;
+       if (curScroll > prevScroll) { 
+         //scrolled up
+      direction = 2;
+       }
+       else if (curScroll < prevScroll) { 
+      //scrolled down
+      direction = 1;
+       }
+
+       if (direction !== prevDirection) {
+         toggleHeader(direction, curScroll);
+       }
+    
+       prevScroll = curScroll;
+     };
+
+     var toggleHeader = function(direction, curScroll) {
+    if (direction === 2 && curScroll > 52) { 
+      
+      //replace 52 with the height of your header in px
+
+      header.classList.add('hide');
+      prevDirection = direction;
+    }
+    else if (direction === 1) {
+      header.classList.remove('hide');
+      prevDirection = direction;
+    }
+  };
+  
+  window.addEventListener('scroll', checkScroll);
+
+})();
+
+
+} 
 });
 
 function checkVisible( elm, eval ) {
