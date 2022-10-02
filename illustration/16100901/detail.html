@@ -265,7 +265,8 @@
 <script src="../.././common/footer.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
 <script type="text/javascript">
-  window.onload = TopUpload();
+  if (matchMedia("only screen and (max-width: 767px)").matches) {window.onload = TopUpload();}
+  
 
   function TopUpload () {  // 화면이 뜬 뒤 처리
 
