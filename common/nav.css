@@ -19,7 +19,7 @@
     #m_nav{display: none;}
 	#nav { 			
 		color: #13519c;
-		height: 18vh; 
+		height: auto; 
 		position: fixed;
     	top:0;
     	width: 98vw;
