@@ -22,8 +22,8 @@
               background: url(main.jpg); background-attachment: fixed; background-size: 100% auto;}
           #index_title{display: none;}
           #detail_title{display: block;}
-         #nav {height: auto;}
             }
+            #nav {height: auto;}
       @media only screen and (max-width: 767px) {
           #index_title{display: none;}
           #detail_title{display: block;}
@@ -266,15 +266,23 @@
 <script src="../.././common/footer.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>       
 <script type="text/javascript">
-  if (matchMedia("only screen and (max-width: 767px)").matches) {window.onload = TopUpload();}
+  if (matchMedia("only screen and (max-width: 767px)").matches) {window.onload = TopUpload_m();}
   
 
-  function TopUpload () {  // 화면이 뜬 뒤 처리
+  function TopUpload_m () {  // 화면이 뜬 뒤 처리
 
-  var obj1 = document.getElementById('navHead'); 
+  var obj1 = document.getElementById('detail_title'); 
   var obj1_height = obj1.offsetHeight;
 
   document.getElementById('main').style.paddingTop = obj1_height + 30 + 'px'
+
+};
+  function TopUpload_pc () {  // 화면이 뜬 뒤 처리
+
+  var obj1 = document.getElementById('nav'); 
+  var obj1_height = obj1.offsetHeight;
+
+  
 
 };
 
