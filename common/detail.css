@@ -34,9 +34,9 @@
                                 
                         .empty{order:0; display:block; opacity: 0;}
                         .text{order:1;}
-                                .Kr{font-size:calc(12px + 0.4rem); line-height: 1.8; word-break: keep-all;}
+                                .Kr{font-size:calc(12px + 0.4rem); line-height: 1.7em; word-break: keep-all;}
                                 .Kr p{margin-bottom:2vh;}
-                                .En{display: none; font-size:calc(12px + 0.4rem); line-height: 1.8; word-break: keep-all;}
+                                .En{display: none; font-size:calc(12px + 0.4rem); line-height: 1.7em; word-break: keep-all;}
                                 .En p{margin-bottom:2vh;}
 
             .details {background-color: black;}
