@@ -27,7 +27,7 @@
                 #left{display: flex; 
                     order:1;}
                     
-                        .togglePC{order:2; margin-bottom: 3vh;}
+                        .togglePC{order:2; margin-bottom: 3vh; z-index:150;}
                         .togglePC p {padding:1vh 1vw; border-radius: 20%;}
                         .toggleM{display: none;}
                         
