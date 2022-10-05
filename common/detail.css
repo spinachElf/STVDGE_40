@@ -61,7 +61,7 @@
                 width:100%;
                 padding: 0 1vw;
                 display: flex;
-                background-color: #f2f6fb;
+                background-color: #f8fafd;
                 bottom:0;
                 border-top:solid #13519c 2px;
                 z-index:10;
@@ -120,7 +120,7 @@
                 width:100%;
                 padding: 0 5vw;
                 display: flex;
-                background-color: #f2f6fb;
+                background-color: #f8fafd;
                 border-top:solid #13519c 2px;
                 
                 justify-content: space-between;
