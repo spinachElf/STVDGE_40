@@ -3,7 +3,7 @@
     @font-face{font-family: 'HV'; src: url('HV Clio Regular.otf');}
     * {box-sizing: border-box; margin: 0; padding: 0; }
     html{
-        font-family: sandoll-gothicneo2,sans-serif; font-weight: 400; font-style: normal; font-size: 18px;  background-color: #f2f6fb; color:#13519c;}
+        font-family: sandoll-gothicneo2,sans-serif; font-weight: 400; font-style: normal; font-size: 18px;  background-color: #f8fafd; color:#13519c;}
  
     ::selection {
 		background-color:#f8fafd;
